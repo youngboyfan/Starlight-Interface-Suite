@@ -6862,59 +6862,8 @@ function Starlight:CreateWindow(WindowSettings)
 											else
 												Starlight.WindowKeybind = nil
 											end
-										elseif input.UserInputType == Enum.UserInputType.Keyboard then
-											if
-												input.KeyCode ~= Enum.KeyCode.Unknown
-												and input.KeyCode ~= Enum.KeyCode[Starlight.WindowKeybind]
-											then
-												local SplitMessage = string.split(tostring(input.KeyCode), ".")
-												local NewKeyNoEnum = SplitMessage[3]
-												NestedElement.Instance.Text = tostring(NewKeyNoEnum)
-												NestedElement.Values.CurrentValue = tostring(NewKeyNoEnum)
-												local Success, Response = pcall(function()
-													NestedElement.Values.OnChangedCallback(
-														NestedElement.Values.CurrentValue
-													)
-												end)
-
-												if not Success then
-													Parent.Instance.Header.Text = "Callback Error"
-													warn(
-														`Starlight Interface Suite - Callback Error | {Element.Values.Name} ({Index} {NestedIndex})`
-													)
-													print(Response)
-													if WindowSettings.NotifyOnCallbackError then
-														Starlight:Notification({
-															Title = Element.Values.Name .. " Callback Error",
-															Content = tostring(Response),
-															Icon = 129398364168201,
-														})
-													end
-													wait(0.5)
-													Parent.Instance.Header.Text = ElementSettings.Name
-												end
-												NestedElement.Instance:ReleaseFocus()
-											elseif input.KeyCode == Enum.KeyCode[Starlight.WindowKeybind] then
-												NestedElement.Instance.Text = NestedElement.Values.CurrentValue
-													== "No Bind"
-													and '<font color="rgb(' .. tostring(
-														math.floor(
-															Starlight.CurrentTheme.Foregrounds.Medium.R * 255 + 0.5
-														)
-													) .. "," .. tostring(
-													math.floor(
-														Starlight.CurrentTheme.Foregrounds.Medium.G * 255 + 0.5
-													)
-												) .. "," .. tostring(
-													math.floor(
-														Starlight.CurrentTheme.Foregrounds.Medium.B * 255 + 0.5
-													)
-												) .. ')">No Bind</font>'
-													or NestedElement.Values.CurrentValue
-												NestedElement.Instance:ReleaseFocus()
-											end
-										else
-											if input.UserInputType == Enum.UserInputType.MouseButton1 then
+										elseif not (input.UserInputType == Enum.UserInputType.Keyboard) then
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
 												NestedElement.Instance.Text = "MB1"
 												NestedElement.Values.CurrentValue = "MB1"
 												NestedElement.Instance:ReleaseFocus()
@@ -6966,6 +6915,58 @@ function Starlight:CreateWindow(WindowSettings)
 													wait(0.5)
 													Parent.Instance.Header.Text = ElementSettings.Name
 												end
+											end
+											
+										else
+											if
+												input.KeyCode ~= Enum.KeyCode.Unknown
+												and input.KeyCode ~= Enum.KeyCode[Starlight.WindowKeybind]
+											then
+												local SplitMessage = string.split(tostring(input.KeyCode), ".")
+												local NewKeyNoEnum = SplitMessage[3]
+												NestedElement.Instance.Text = tostring(NewKeyNoEnum)
+												NestedElement.Values.CurrentValue = tostring(NewKeyNoEnum)
+												local Success, Response = pcall(function()
+													NestedElement.Values.OnChangedCallback(
+														NestedElement.Values.CurrentValue
+													)
+												end)
+
+												if not Success then
+													Parent.Instance.Header.Text = "Callback Error"
+													warn(
+														`Starlight Interface Suite - Callback Error | {Element.Values.Name} ({Index} {NestedIndex})`
+													)
+													print(Response)
+													if WindowSettings.NotifyOnCallbackError then
+														Starlight:Notification({
+															Title = Element.Values.Name .. " Callback Error",
+															Content = tostring(Response),
+															Icon = 129398364168201,
+														})
+													end
+													wait(0.5)
+													Parent.Instance.Header.Text = ElementSettings.Name
+												end
+												NestedElement.Instance:ReleaseFocus()
+											elseif input.KeyCode == Enum.KeyCode[Starlight.WindowKeybind] then
+												NestedElement.Instance.Text = NestedElement.Values.CurrentValue
+													== "No Bind"
+													and '<font color="rgb(' .. tostring(
+														math.floor(
+															Starlight.CurrentTheme.Foregrounds.Medium.R * 255 + 0.5
+														)
+													) .. "," .. tostring(
+													math.floor(
+														Starlight.CurrentTheme.Foregrounds.Medium.G * 255 + 0.5
+													)
+												) .. "," .. tostring(
+													math.floor(
+														Starlight.CurrentTheme.Foregrounds.Medium.B * 255 + 0.5
+													)
+												) .. ')">No Bind</font>'
+													or NestedElement.Values.CurrentValue
+												NestedElement.Instance:ReleaseFocus()
 											end
 										end
 										CheckingForKey = false
