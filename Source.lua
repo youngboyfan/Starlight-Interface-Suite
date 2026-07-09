@@ -12507,7 +12507,7 @@ StarlightUI.Enabled = true
 
 local enabled = true
 
-if isStudio and enabled then
+if enabled then
 	Starlight:SetTheme("Tokyo Night Storm")
 
 	local win = Starlight:CreateWindow({
