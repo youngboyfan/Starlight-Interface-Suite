@@ -130,7 +130,6 @@ end)
 
 -- Tab change trigger buttons
 apiGB:CreateDivider()
-local sections = win:CreateTabSection and { "FEATURES", "ELEMENTS", "THEMES" } or {}
 apiGB:CreateButton({ Name = "Switch to FEATURES tab", Callback = function()
 	-- Switch via the tab's button click if accessible
 	Starlight:Toast({ Title = "Click the tab in the sidebar", Intent = "info", Duration = 3 })
