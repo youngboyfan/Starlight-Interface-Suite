@@ -12508,381 +12508,101 @@ StarlightUI.Enabled = true
 local enabled = true
 
 if isStudio and enabled then
-	--Starlight:SetTheme("Hollywood Dark")
+	Starlight:SetTheme("Tokyo Night Storm")
 
 	local win = Starlight:CreateWindow({
-		Name = "Window",
-		Subtitle = "this is an optional subtitle",
+		Name = "Starlight Enhanced",
+		Subtitle = "feat. all new improvements",
 		Icon = 92936499827985,
-
 		LoadingEnabled = false,
-		LoadingSettings = {
-			Title = "Starlight Interface Suite",
-			Subtitle = "Welcome to Starlight",
-		},
-
-		BuildWarnings = true,
-		InterfaceAdvertisingPrompts = true,
+		BuildWarnings = false,
 		NotifyOnCallbackError = true,
-
-		ConfigurationSettings = {
-			Enabled = false,
-			RootFolder = nil,
-			FolderName = nil,
-		},
-
-		DefaultSize = nil,
-
-		KeySystem = {
-			Enabled = false,
-			Title = "Starlight Key System",
-			Subtitle = "Enter Your Key To Use The Script",
-			Note = "This Key System Only supports strings",
-
-			SaveKey = false,
-			KeyFile = "Key",
-
-			KeyObtainLink = "",
-			Discord = false,
-
-			HttpKey = false,
-			Keys = { "Key" }, -- put the link to a raw content page containing your key.
-		},
-
-		Discord = { -- u can still have it in the home tab, this is just auto join
-			Enabled = false,
-			RememberJoins = true,
-			Link = "1234",
-		},
+		KeySystem = { Enabled = false },
 	})
 
-	win:CreateHomeTab({
-		Backdrop = 78881404248017,
-	})
-	local ts = win:CreateTabSection("ELEMENT SHOWCASE")
-	local ts2 = win:CreateTabSection("TAB SECTION EXAMPLE")
+	win:CreateHomeTab({ Backdrop = 78881404248017 })
 
-	local t = ts:CreateTab({
-		Name = "Elements",
-		Columns = 2,
-		Icon = NebulaIcons:GetIcon("broadcast", "Phosphor"),
-	}, "hi")
-	local t2 = ts2:CreateTab({
-		Name = "Premium Tab",
-		Columns = 1,
-		Icon = NebulaIcons:GetIcon("sparkle", "Material"),
-	}, "hi2")
-	local t3 = ts2:CreateTab({
-		Name = "Extra Tab",
-		Columns = 2,
-	}, "hi3")
+	local featSection = win:CreateTabSection("FEATURES")
+	local featTab = featSection:CreateTab({ Name = "Toasts & Actions", Columns = 2 }, "feat_tab")
 
-	local g = t:CreateGroupbox({
-		Name = "Groupbox Example",
-		Column = 2,
-	}, "g")
-	local g2 = t:CreateGroupbox({
-		Name = "Groupbox Example",
-		Icon = NebulaIcons:GetIcon("atom", "Phosphor"),
-		Style = 2,
-	}, "g2")
-	t2:CreateGroupbox({
-		Name = "Groupbox Example",
-		Icon = NebulaIcons:GetIcon("rocket", "Lucide"),
-	}, "noindex")
+	local tg = featTab:CreateGroupbox({ Name = "Toast Notifications", Column = 1 }, "toast_gb")
+	tg:CreateButton({ Name = "Info Toast", Callback = function() Starlight:Toast({ Title = "Information", Content = "Info toast with blue accent.", Intent = "info", Duration = 3 }) end })
+	tg:CreateButton({ Name = "Success Toast", Callback = function() Starlight:Toast({ Title = "Success", Content = "Action completed!", Intent = "success", Duration = 3 }) end })
+	tg:CreateButton({ Name = "Warning Toast", Callback = function() Starlight:Toast({ Title = "Warning", Content = "Be careful!", Intent = "warning", Duration = 4 }) end })
+	tg:CreateButton({ Name = "Error Toast", Callback = function() Starlight:Toast({ Title = "Error", Content = "Something went wrong.", Intent = "error", Duration = 4 }) end })
+	tg:CreateDivider()
+	tg:CreateButton({ Name = "Stack 5 Toasts", Tooltip = "Tests auto-stacking", Callback = function()
+		for i = 1, 5 do task.delay(i * 0.3, function() Starlight:Toast({ Title = "Toast #"..i, Content = "Stacking demo", Intent = i==5 and "error" or "info", Duration = 8 }) end) end
+	end })
 
-	local x = g:CreateButton({
-		Name = "Centered Button",
-		Callback = function() end,
-		Tooltip = "Button 2!",
-		CenterContent = true,
-		Style = 1,
-	}, "btn2")
+	local ag = featTab:CreateGroupbox({ Name = "Quick Actions", Column = 2 }, "action_gb")
+	ag:CreateButton({ Name = "Search Elements", Tooltip = "Searches for Button", Callback = function()
+		local r = Starlight:SearchElements("Button")
+		Starlight:Toast({ Title = "Found "..#r.." results", Content = #r > 0 and r[1].Element.Values.Name or "None", Intent = "info", Duration = 4 })
+	end })
+	ag:CreateButton({ Name = "Toggle Acrylic", Callback = function() mainAcrylic = not mainAcrylic; acrylicEvent:Fire()
+		Starlight:Toast({ Title = "Acrylic "..(mainAcrylic and "On" or "Off"), Intent = "info", Duration = 2 }) end })
+	ag:CreateButton({ Name = "Acrylic: 25%", Callback = function() Starlight:SetAcrylicIntensity(0.25); Starlight:Toast({ Title = "Acrylic: 25%", Intent = "info", Duration = 2 }) end })
+	ag:CreateButton({ Name = "Acrylic: 100%", Callback = function() Starlight:SetAcrylicIntensity(1); Starlight:Toast({ Title = "Acrylic: 100%", Intent = "info", Duration = 2 }) end })
+	ag:CreateDivider()
+	ag:CreateLabel({ Name = "Shortcuts:  Ctrl+K . Ctrl+Q" })
 
-	local hi = g2:CreateButton({
-		Name = "Button",
-		Icon = NebulaIcons:GetIcon("cursor-click", "Phosphor"),
-		Callback = function()
-			win:PromptDialog({
-				Name = "Dialog Test",
-				Content = "COntent TEst",
-				Icon = NebulaIcons:GetIcon("filter_list_alt"),
-				Type = 1,
-				Actions = {
-					Primary = {
-						Name = "Okay!",
-						Icon = NebulaIcons:GetIcon("check", "Material"),
-						Callback = function()
-							win:PromptDialog({
-								Name = "Dialog Input Test",
-								Content = "COntent TEst",
-								Type = 2,
-								Actions = {
-									{
-										PlaceholderText = "placeholder",
-										Numeric = false,
-										RemoveTextAfterFocusLost = true,
-										Callback = function(x)
-											print(x)
-										end,
-									},
-									{
-										PlaceholderText = "numbers",
-										Numeric = true,
-										MaxCharacters = 5,
-										RemoveTextOnFocus = false,
-										Callback = function(x)
-											print(x)
-										end,
-									},
-								},
-							})
-						end,
-					},
-					{
-						Name = "Cancel",
-						Callback = function() end,
-					},
-				},
-			})
-		end,
-		Style = 1,
-		Tooltip = "Button 1!",
-	}, "btn")
+	local elemTab = featSection:CreateTab({ Name = "New Elements", Columns = 2 }, "elem_tab")
 
-	g2:CreateButton({
-		Name = "Flat Button",
-		Icon = NebulaIcons:GetIcon("locate", "Lucide"),
-		Callback = function()
-			x:Lock("this is a reason")
-		end,
-		Tooltip = "flat Button!",
-	}, "btn3")
+	local pg = elemTab:CreateGroupbox({ Name = "Progress Bar", Column = 1 }, "prog_gb")
+	local prog = pg:CreateProgress({ Name = "Download", CurrentValue = 0, ShowLabel = true }, "prog_demo")
+	local pv = 0
+	pg:CreateButton({ Name = "Animate 0-100%", Callback = function()
+		pv = 0; for i=1,100 do task.delay(i*0.025, function() pv=i/100; prog:Set({CurrentValue=pv}) end) end
+		task.delay(2.6, function() Starlight:Toast({Title="Done!",Intent="success",Duration=2}) end)
+	end })
+	pg:CreateButton({ Name = "Reset", Callback = function() pv=0; prog:Set({CurrentValue=0}) end })
 
-	g2:CreateToggle({
-		Name = "Toggle",
-		CheckboxIcon = NebulaIcons:GetIcon("check"),
-		Callback = function() end,
-		Tooltip = "Hi",
-	}, "tggle")
-	g:CreateToggle({
-		Name = "Toggle without Icon",
-		Callback = function() end,
-		Tooltip = "Hi",
-	}, "tggle2")
+	local sg = elemTab:CreateGroupbox({ Name = "Segmented Control", Column = 1 }, "seg_gb")
+	sg:CreateLabel({ Name = "Selection: View A" }, "seg_status")
+	sg:CreateSegmentedControl({ Name = "View Mode", Options = {"View A","View B","View C"}, CurrentOption = "View A",
+		Callback = function(opt) pcall(function()
+			local l = Starlight.Window.TabSections["FEATURES"].Tabs["elem_tab"].Groupboxes["seg_gb"].Elements["seg_status"]
+			if l and l.Set then l:Set({Name="Selection: "..opt}) end
+		end) end }, "seg_ctrl")
 
-	g:CreateToggle({
-		Name = "Toggle - Switch Style",
-		Style = 2,
-		Callback = function() end,
-		Tooltip = "Hi",
-	}, "tggle2")
+	local bg = elemTab:CreateGroupbox({ Name = "Badges & Chips", Column = 2 }, "badge_gb")
+	bg:CreateBadge({ Name = "Status", Text = "Online", Color = Color3.fromRGB(80,200,120) }, "b1")
+	bg:CreateBadge({ Name = "Tag", Text = "Premium", Color = Color3.fromRGB(230,180,60) }, "b2")
+	bg:CreateBadge({ Name = "Version", Text = "v2.1.0", Color = Color3.fromRGB(86,156,214) }, "b3")
+	bg:CreateBadge({ Name = "Env", Text = "Production", Color = Color3.fromRGB(189,147,249) }, "b4")
+	bg:CreateDivider()
+	local bn = 0
+	bg:CreateButton({ Name = "Add Removable Badge", Callback = function()
+		bn+=1; bg:CreateBadge({Name="Temp",Text="Click x to dismiss",Color=Color3.fromRGB(255,85,85),Removable=true,
+			Callback=function() Starlight:Toast({Title="Removed",Intent="info",Duration=2}) end}, "tmp_"..bn)
+	end })
 
-	g2:CreateSlider({
-		Name = "Slider",
-		Range = { -100, 100 },
-		Increment = 0.5,
-		Suffix = "%",
-		Callback = function() end,
-	}, "sldr")
+	local aib = elemTab:CreateGroupbox({ Name = "Tab Change Events", Column = 2 }, "api_gb")
+	aib:CreateLabel({ Name = "win:OnTabChange(callback)" }, "api_l1")
+	aib:CreateLabel({ Name = "Fires when you switch tabs" }, "api_l2")
+	win:OnTabChange(function(tab)
+		Starlight:Toast({ Title = "Tab: "..(tab.Values and tab.Values.Name or "Home"), Intent = "info", Duration = 2 })
+	end)
 
-	g2:CreateSlider({
-		Name = "Slider",
-		Range = { 0.2, 1 },
-		HideMax = true,
-		Tooltip = "Hi",
-		CurrentValue = 0.2,
-		Increment = 0.002,
-		Suffix = "km/h",
-		Callback = function(v)
-			print(v)
-		end,
-	}, "sldr2")
-
-	g:CreateInput({
-		Name = "dynamic input",
-		Tooltip = "Hi",
-		Callback = function() end,
-	}, "inpt")
-	g2:CreateInput({
-		Name = "numeric input",
-		Numeric = true,
-		PlaceholderText = "Numbers Only Hehe",
-		Tooltip = "Hi",
-		Callback = function() end,
-	}, "nmrcinpt")
-
-	--g:CreateBind({
-	--	Name = "bind",
-	--	CurrentValue = "Q",
-	--	Callback = function() end
-	--})
-	g2:CreateLabel({
-		Tooltip = "Hi",
-		Name = "Label",
-	}, "lblbnd"):AddBind({
-		CurrentValue = "1",
-		HoldToInteract = true,
-		Tooltip = "Hi",
-		Callback = function(v)
-			print(v)
-		end,
-	}, "bnd")
-
-	g2:CreateLabel({
-		Tooltip = "Hi",
-		Name = "Window Bind",
-	}, "lblbnd"):AddBind({
-		CurrentValue = "q",
-		HoldToInteract = false,
-		Tooltip = "Hi",
-		WindowSetting = true,
-		Callback = function() end,
-	}, "wndwbnd")
-
-	g2:CreateToggle({
-		Name = "Toggle Bind",
-		CurrentValue = false,
-		Tooltip = "Hi",
-		Style = 2,
-		SyncToggleState = true,
-		Callback = function(v)
-			print(v)
-		end,
-	}, "bndprnt"):AddBind({
-		CurrentValue = "return",
-		Tooltip = "Hi",
-		SyncToggleState = true,
-	}, "bnd2")
-
-	--g2:CreateDropdown({
-	--	Name = "Hello",
-	--	Options = {"1","2","3"},
-	--	CurrentOption = {"1"},
-	--	MultipleOptions = true,
-	--	Callback = function(v)
-	--		for i,v in v do
-	--			print(v)
-	--		end
-	--	end,
-	--})
-
-	g:CreateDivider()
-
-	local dropdown = g:CreateLabel({ Name = "Dropdown" }, "lbldrpdwn"):AddDropdown({
-		Options = { "hi", "heeh", "huh" },
-		Tooltip = "Hi",
-		CurrentOption = nil,
-		Callback = function(v)
-			print(v)
-		end,
-	}, "drpdwn")
-
-	local dropdown2 = g:CreateLabel({ Name = "Dropdown MultiOptions" }, "lbldrpdwn2"):AddDropdown({
-		Options = { "smthhhhh veryyyyyyyyyyyy loooooooonggggggg", "heeh", "huh" },
-		CurrentOption = { "wsp", "huh" },
-		Tooltip = "Hi",
-		MultipleOptions = true,
-		Callback = function(v)
-			print(v)
-		end,
-	}, "drpdwn2")
-	dropdown2:Set({
-		Options = { "noooo" },
-	})
-
-	local mix =
-		g2:CreateToggle({ Name = "Dropdown On Toggle", CurrentValue = false, Callback = function() end }, "tgglemix")
-	local id = mix:AddDropdown({
-		Options = { "hi", "heeh", "huh" },
-		CurrentOption = { "wsp", "huh" },
-		Tooltip = "Hi",
-		MultipleOptions = true,
-		Special = 1,
-		Placeholder = "Select a player!",
-		Callback = function(v)
-			print(v)
-		end,
-	}, "drpdwn3")
-
-	mix:AddBind({
-		CurrentValue = nil,
-		Tooltip = "Hi",
-		SyncToggleState = true,
-	}, "bnd3")
-	local cp = mix:AddColorPicker({
-		Transparency = 0,
-		CurrentValue = Color3.new(0, 1, 0.333333),
-		Callback = function(c, v)
-			local p = Instance.new("Part", workspace)
-			p.CFrame = Player.Character.HumanoidRootPart.CFrame
-			p.Color = c
-			p.Transparency = v
-		end,
-	}, "cp")
-
-	g:CreateLabel({
-		Name = "Color Picker No Alpha",
-		Icon = NebulaIcons:GetIcon("color_lens", "Material"),
-		Tooltip = "Hi",
-	}, "cplbl2"):AddColorPicker({
-		CurrentValue = Color3.new(),
-		Callback = function() end,
-	}, "cp")
-
-	g:CreateSlider({
-		Name = "slider test",
-		Range = { 0, 255 },
-		CurrentValue = 99,
-		Callback = function(v)
-			cp:Set({
-				CurrentValue = Color3.fromHSV(v / 255, 1, 1),
-			})
-		end,
-	}, "sldrcp")
-
-	g:CreateLabel({
-		Name = "Label w Icon",
-		Icon = NebulaIcons:GetIcon("aperture", "Lucide"),
-		Tooltip = "Hi",
-	}, "lbl")
-	g2:CreateParagraph({
-		Name = "paragraph",
-		Content = "Hello!! Im A Paragraph, and i can store bunch of text",
-	}, "prgrph")
-	g:CreateParagraph({
-		Name = "paragraph 2",
-		Icon = NebulaIcons:GetIcon("filter_list_alt"),
-		Content = "Hello!! Im A Paragraph, and i can store bunch of text. \nI also grow bigger or smaller depending on how much text is in my body! \nLike this, i am a much bigger paragraph than the other one! i also support multi lines ",
-	}, "prgrph2")
-
-	Starlight:Notification({
-		Title = "Hi",
-		Content = "Hello!! Im A Paragraph, and i can store bunch of text. \nI also grow bigger or smaller depending on how much text is in my body! \nLike this, i am a much bigger paragraph than the other one! i also support multi lines ",
-		Icon = NebulaIcons:GetIcon("notifications_active", "Material"),
-	})
-	Starlight:Notification({
-		Title = "Infinite Notification",
-		Content = "same as the other guy but i cant expire cus im set to -1 duration",
-		Duration = -1,
-		Icon = NebulaIcons:GetIcon("bell-simple-ringing", "Phosphor-Filled"),
-	})
-
-	--[[task.delay(4, function()
-		Starlight:SetTheme("Starlight")
-	end)]]
-
-	local configg = t:BuildConfigGroupbox(2)
-	local themeg = t:BuildThemeGroupbox(1)
-
-	ts2:CreateCustomTab({
-		Name = "Custom Tab",
-		Icon = 11963368654,
-		Page = Instance.new("Frame"),
-	}, "customtab")
+	local themeSection = win:CreateTabSection("THEMES")
+	local themeTab = themeSection:CreateTab({ Name = "Quick Switch", Columns = 2 }, "theme_tab")
+	local themeNames = {"Starlight","Hollywood Dark","Orca","Nord","Dracula","Tokyo Night Storm","Catppuccin Mocha","Rose Pine","Aurora","Glacier","VSCode Dark Modern"}
+	for i, name in ipairs(themeNames) do
+		local col = i <= math.ceil(#themeNames/2) and 1 or 2
+		local gb = themeTab:CreateGroupbox({ Name = name, Column = col, Style = 2 }, "th_"..i)
+		gb:CreateButton({ Name = "Apply", Callback = function()
+			Starlight:SetTheme(name)
+			Starlight:Toast({ Title = "Theme: "..name, Content = "Press Ctrl+K for more", Intent = "success", Duration = 2 })
+		end })
+	end
 
 	Starlight:LoadAutoloadConfig()
-end --]=]0
+	task.delay(1, function()
+		Starlight:Toast({ Title = "Welcome to Starlight Enhanced!", Content = "Ctrl+K = Commands . Ctrl+Q = Settings", Intent = "info", Duration = 6 })
+	end)
+end
+
 
 --// ENDSECTION
 
