@@ -2552,14 +2552,6 @@ function Starlight:SearchElements(query: string)
 
 	return results
 end
-
--- Window tab-change event system
-function Starlight.Window:OnTabChange(callback)
-	self._tabChangeCallbacks = self._tabChangeCallbacks or {}
-	table.insert(self._tabChangeCallbacks, callback)
-end
-
-function Starlight:Notification(data)
 	--[[
 	NotificationSettings = {
 		Title = string,
@@ -3952,10 +3944,16 @@ function Starlight:CreateWindow(WindowSettings)
 		Settings = nil,
 		CurrentSize = mainWindow.Size,
 
-		Values = WindowSettings,
-	}
+			Values = WindowSettings,
+		}
 
-	--// SUBSECTION : Initial Code
+		-- Window tab-change event
+		function Starlight.Window:OnTabChange(callback)
+			self._tabChangeCallbacks = self._tabChangeCallbacks or {}
+			table.insert(self._tabChangeCallbacks, callback)
+		end
+
+		--// SUBSECTION : Initial Code
 	do
 		local AcrylicObject = Acrylic.AcrylicPaint()
 		local AcrylicObject2 = Acrylic.AcrylicPaint()
