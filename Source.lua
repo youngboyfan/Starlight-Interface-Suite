@@ -900,12 +900,216 @@ local Themes = {
 			}),
 		},
 	},
-	--PHub = {},
-	--Serika = {},
-	--Rust = {},
-	--Matcha = {},
-	--Vaporwave = {},
-}
+		["Tokyo Night Storm"] = {
+			Backgrounds = {
+				Dark = Color3.fromRGB(21, 23, 33),
+				Medium = Color3.fromRGB(27, 29, 41),
+				Light = Color3.fromRGB(33, 35, 49),
+				Groupbox = Color3.fromRGB(30, 32, 46),
+				Highlight = Color3.fromRGB(42, 44, 57),
+			},
+			Foregrounds = {
+				Active = Color3.fromRGB(192, 203, 224),
+				Light = Color3.fromRGB(192, 203, 224),
+				Medium = Color3.fromRGB(154, 160, 185),
+				Dark = Color3.fromRGB(86, 91, 116),
+				MediumHover = Color3.fromRGB(170, 178, 200),
+				DarkHover = Color3.fromRGB(105, 110, 130),
+			},
+			Miscellaneous = {
+				Divider = Color3.fromRGB(192, 203, 224),
+				Shadow = Color3.fromRGB(14, 15, 22),
+				LighterShadow = Color3.fromRGB(21, 23, 33),
+			},
+			Accents = {
+				Main = ColorSequence.new({
+					ColorSequenceKeypoint.new(0.0, Color3.fromRGB(122, 162, 247)),
+					ColorSequenceKeypoint.new(0.5, Color3.fromRGB(157, 124, 210)),
+					ColorSequenceKeypoint.new(1.0, Color3.fromRGB(187, 154, 247)),
+				}),
+				Brighter = ColorSequence.new({
+					ColorSequenceKeypoint.new(0.0, Color3.fromRGB(158, 191, 255)),
+					ColorSequenceKeypoint.new(0.5, Color3.fromRGB(187, 154, 247)),
+					ColorSequenceKeypoint.new(1.0, Color3.fromRGB(214, 187, 255)),
+				}),
+			},
+		},
+
+		Nord = {
+			Backgrounds = {
+				Dark = Color3.fromRGB(30, 34, 41),
+				Medium = Color3.fromRGB(37, 41, 50),
+				Light = Color3.fromRGB(43, 47, 56),
+				Groupbox = Color3.fromRGB(40, 44, 53),
+				Highlight = Color3.fromRGB(28, 31, 37),
+			},
+			Foregrounds = {
+				Active = Color3.fromRGB(236, 239, 244),
+				Light = Color3.fromRGB(236, 239, 244),
+				Medium = Color3.fromRGB(181, 189, 200),
+				Dark = Color3.fromRGB(76, 86, 106),
+				MediumHover = Color3.fromRGB(200, 208, 216),
+				DarkHover = Color3.fromRGB(95, 105, 120),
+			},
+			Miscellaneous = {
+				Divider = Color3.fromRGB(143, 188, 187),
+				Shadow = Color3.fromRGB(28, 31, 37),
+				LighterShadow = Color3.fromRGB(35, 38, 44),
+			},
+			Accents = {
+				Main = ColorSequence.new({
+					ColorSequenceKeypoint.new(0.0, Color3.fromRGB(143, 188, 187)),
+					ColorSequenceKeypoint.new(0.5, Color3.fromRGB(136, 192, 208)),
+					ColorSequenceKeypoint.new(1.0, Color3.fromRGB(129, 161, 193)),
+				}),
+				Brighter = ColorSequence.new({
+					ColorSequenceKeypoint.new(0.0, Color3.fromRGB(173, 210, 210)),
+					ColorSequenceKeypoint.new(0.5, Color3.fromRGB(166, 212, 225)),
+					ColorSequenceKeypoint.new(1.0, Color3.fromRGB(158, 185, 215)),
+				}),
+			},
+		},
+
+		Dracula = {
+			Backgrounds = {
+				Dark = Color3.fromRGB(23, 22, 30),
+				Medium = Color3.fromRGB(28, 27, 36),
+				Light = Color3.fromRGB(33, 32, 42),
+				Groupbox = Color3.fromRGB(30, 29, 39),
+				Highlight = Color3.fromRGB(20, 19, 26),
+			},
+			Foregrounds = {
+				Active = Color3.fromRGB(248, 248, 242),
+				Light = Color3.fromRGB(248, 248, 242),
+				Medium = Color3.fromRGB(189, 189, 189),
+				Dark = Color3.fromRGB(98, 96, 110),
+				MediumHover = Color3.fromRGB(210, 210, 210),
+				DarkHover = Color3.fromRGB(115, 113, 125),
+			},
+			Miscellaneous = {
+				Divider = Color3.fromRGB(98, 114, 164),
+				Shadow = Color3.fromRGB(18, 17, 23),
+				LighterShadow = Color3.fromRGB(23, 22, 30),
+			},
+			Accents = {
+				Main = ColorSequence.new({
+					ColorSequenceKeypoint.new(0.0, Color3.fromRGB(189, 147, 249)),
+					ColorSequenceKeypoint.new(0.5, Color3.fromRGB(255, 85, 85)),
+					ColorSequenceKeypoint.new(1.0, Color3.fromRGB(80, 250, 123)),
+				}),
+				Brighter = ColorSequence.new({
+					ColorSequenceKeypoint.new(0.0, Color3.fromRGB(210, 180, 255)),
+					ColorSequenceKeypoint.new(0.5, Color3.fromRGB(255, 130, 130)),
+					ColorSequenceKeypoint.new(1.0, Color3.fromRGB(130, 255, 165)),
+				}),
+			},
+		},
+
+		Aurora = {
+			Backgrounds = {
+				Dark = Color3.fromRGB(235, 238, 245),
+				Medium = Color3.fromRGB(245, 247, 250),
+				Light = Color3.fromRGB(250, 252, 255),
+				Groupbox = Color3.fromRGB(240, 243, 250),
+				Highlight = Color3.fromRGB(225, 230, 240),
+			},
+			Foregrounds = {
+				Active = Color3.fromRGB(30, 35, 50),
+				Light = Color3.fromRGB(30, 35, 50),
+				Medium = Color3.fromRGB(120, 125, 140),
+				Dark = Color3.fromRGB(180, 185, 200),
+				MediumHover = Color3.fromRGB(100, 105, 120),
+				DarkHover = Color3.fromRGB(160, 165, 180),
+			},
+			Miscellaneous = {
+				Divider = Color3.fromRGB(150, 200, 230),
+				Shadow = Color3.fromRGB(210, 215, 225),
+				LighterShadow = Color3.fromRGB(235, 238, 245),
+			},
+			Accents = {
+				Main = ColorSequence.new({
+					ColorSequenceKeypoint.new(0.0, Color3.fromRGB(100, 210, 230)),
+					ColorSequenceKeypoint.new(0.5, Color3.fromRGB(120, 170, 240)),
+					ColorSequenceKeypoint.new(1.0, Color3.fromRGB(150, 130, 250)),
+				}),
+				Brighter = ColorSequence.new({
+					ColorSequenceKeypoint.new(0.0, Color3.fromRGB(150, 230, 245)),
+					ColorSequenceKeypoint.new(0.5, Color3.fromRGB(165, 195, 250)),
+					ColorSequenceKeypoint.new(1.0, Color3.fromRGB(185, 170, 255)),
+				}),
+			},
+		},
+
+		["Rose Pine"] = {
+			Backgrounds = {
+				Dark = Color3.fromRGB(31, 29, 32),
+				Medium = Color3.fromRGB(38, 35, 40),
+				Light = Color3.fromRGB(44, 41, 48),
+				Groupbox = Color3.fromRGB(41, 38, 44),
+				Highlight = Color3.fromRGB(25, 23, 28),
+			},
+			Foregrounds = {
+				Active = Color3.fromRGB(224, 222, 220),
+				Light = Color3.fromRGB(224, 222, 220),
+				Medium = Color3.fromRGB(165, 157, 155),
+				Dark = Color3.fromRGB(110, 104, 110),
+				MediumHover = Color3.fromRGB(190, 184, 182),
+				DarkHover = Color3.fromRGB(130, 124, 130),
+			},
+			Miscellaneous = {
+				Divider = Color3.fromRGB(235, 188, 186),
+				Shadow = Color3.fromRGB(24, 22, 26),
+				LighterShadow = Color3.fromRGB(31, 29, 32),
+			},
+			Accents = {
+				Main = ColorSequence.new({
+					ColorSequenceKeypoint.new(0.0, Color3.fromRGB(235, 188, 186)),
+					ColorSequenceKeypoint.new(0.5, Color3.fromRGB(246, 193, 165)),
+					ColorSequenceKeypoint.new(1.0, Color3.fromRGB(156, 207, 216)),
+				}),
+				Brighter = ColorSequence.new({
+					ColorSequenceKeypoint.new(0.0, Color3.fromRGB(245, 210, 208)),
+					ColorSequenceKeypoint.new(0.5, Color3.fromRGB(252, 215, 190)),
+					ColorSequenceKeypoint.new(1.0, Color3.fromRGB(185, 225, 230)),
+				}),
+			},
+		},
+
+		["VSCode Dark Modern"] = {
+			Backgrounds = {
+				Dark = Color3.fromRGB(30, 30, 30),
+				Medium = Color3.fromRGB(37, 37, 38),
+				Light = Color3.fromRGB(45, 45, 45),
+				Groupbox = Color3.fromRGB(42, 42, 44),
+				Highlight = Color3.fromRGB(25, 25, 25),
+			},
+			Foregrounds = {
+				Active = Color3.fromRGB(204, 204, 204),
+				Light = Color3.fromRGB(204, 204, 204),
+				Medium = Color3.fromRGB(156, 156, 156),
+				Dark = Color3.fromRGB(86, 86, 86),
+				MediumHover = Color3.fromRGB(180, 180, 180),
+				DarkHover = Color3.fromRGB(106, 106, 106),
+			},
+			Miscellaneous = {
+				Divider = Color3.fromRGB(86, 86, 86),
+				Shadow = Color3.fromRGB(20, 20, 20),
+				LighterShadow = Color3.fromRGB(30, 30, 30),
+			},
+			Accents = {
+				Main = ColorSequence.new({
+					ColorSequenceKeypoint.new(0.0, Color3.fromRGB(86, 156, 214)),
+					ColorSequenceKeypoint.new(0.5, Color3.fromRGB(86, 156, 214)),
+					ColorSequenceKeypoint.new(1.0, Color3.fromRGB(86, 156, 214)),
+				}),
+				Brighter = ColorSequence.new({
+					ColorSequenceKeypoint.new(0.0, Color3.fromRGB(120, 190, 240)),
+					ColorSequenceKeypoint.new(0.5, Color3.fromRGB(120, 190, 240)),
+					ColorSequenceKeypoint.new(1.0, Color3.fromRGB(120, 190, 240)),
+				}),
+			},
+		},
+	}
 
 local function deepCopy(tbl)
 	if type(tbl) ~= "table" then
@@ -926,7 +1130,46 @@ function Tween.Info(style: string?, direction: string?, time: number?)
 	style = style or "Exponential"
 	direction = direction or "Out"
 	time = time or 0.5
+
+	-- Spring-style easing: maps to a snappy Quad/Back out for a spring-like feel
+	if style == "Spring" then
+		style = "Back"
+		direction = "Out"
+		time = time * 0.6
+	end
+
 	return TweenInfo.new(time, Enum.EasingStyle[style], Enum.EasingDirection[direction])
+end
+
+-- Tween:Parallel — animate multiple objects in parallel
+-- Usage: Tween:Parallel({ {object, goal, info?}, ... }, callback?)
+function Tween:Parallel(animations, callback)
+	local count = #animations
+	local completed = 0
+
+	for _, anim in ipairs(animations) do
+		local obj, goal, tweenInfo = anim[1], anim[2], anim[3]
+		local tween = TweenService:Create(obj, tweenInfo or Tween.Info(), goal)
+		tween.Completed:Connect(function()
+			completed += 1
+			if completed >= count and callback then
+				callback()
+			end
+		end)
+		tween:Play()
+	end
+end
+
+-- Tween:Spring — convenience for spring-like animation on a single object
+-- Usage: Tween:Spring(object, goal, duration?, callback?)
+function Tween:Spring(object, goal, duration, callback)
+	local info = Tween.Info("Spring", nil, duration or 0.45)
+	local tween = TweenService:Create(object, info, goal)
+	if callback then
+		tween.Completed:Connect(callback)
+	end
+	tween:Play()
+	return tween
 end
 
 local NebulaIcons = isStudio and require(ReplicatedStorage.NebulaIcons)
@@ -1798,78 +2041,116 @@ local function AddToolTip(InfoStr, HoverInstance)
 
 	tooltip.Visible = false
 
-	local corner = Instance.new("UICorner")
-	corner.CornerRadius = UDim.new(0, 3)
-	corner.Parent = tooltip
+		-- Scale for smooth entrance animation
+		local uiScale = Instance.new("UIScale")
+		uiScale.Scale = 0.92
+		uiScale.Parent = tooltip
 
-	local stroke = Instance.new("UIStroke")
-	stroke.Color = Color3.fromRGB(65, 66, 77)
-	stroke.Parent = tooltip
+		local corner = Instance.new("UICorner")
+		corner.CornerRadius = UDim.new(0, 5)
+		corner.Parent = tooltip
 
-	local hoverTime = 0
-	local IsHovering = false
-	local lastMousePos = nil
-	local threshold = 0.44
+		local stroke = Instance.new("UIStroke")
+		stroke.Color = Color3.fromRGB(65, 66, 77)
+		stroke.Transparency = 0.3
+		stroke.Parent = tooltip
 
-	local function updateTooltipPos()
-		tooltip.Position = UDim2.fromOffset(Mouse.X + 15, Mouse.Y + 20)
-	end
+		-- Shadow for depth
+		tooltip.BackgroundColor3 = Color3.fromRGB(20, 20, 25)
 
-	if HoverInstance then
-		HoverInstance.MouseEnter:Connect(function()
-			IsHovering = true
-			lastMousePos = Vector2.new(Mouse.X, Mouse.Y)
-			hoverTime = 0
-		end)
+		local hoverTime = 0
+		local IsHovering = false
+		local lastMousePos = nil
+		local threshold = 0.3
+		local tooltipVisible = false
 
-		HoverInstance.MouseLeave:Connect(function()
-			IsHovering = false
-			tooltip.Visible = false
-		end)
+		local function showTooltip()
+			if tooltipVisible then return end
+			tooltipVisible = true
+			tooltip.Visible = true
+			uiScale.Scale = 0.92
+			tooltip.BackgroundTransparency = 0.3
+			TweenService:Create(uiScale, TweenInfo.new(0.15, Enum.EasingStyle.Back, Enum.EasingDirection.Out), {
+				Scale = 1,
+			}):Play()
+			TweenService:Create(tooltip, TweenInfo.new(0.12, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out), {
+				BackgroundTransparency = 0,
+			}):Play()
+		end
 
-		HoverInstance:GetPropertyChangedSignal("AbsolutePosition"):Connect(function()
-			local p, pos, size = Mouse, HoverInstance.AbsolutePosition, HoverInstance.AbsoluteSize
-			if not (p.X >= pos.X and p.X <= pos.X + size.X and p.Y >= pos.Y and p.Y <= pos.Y + size.Y) then
-				IsHovering = false
-				tooltip.Visible = false
-			else
+		local function hideTooltip()
+			if not tooltipVisible then return end
+			tooltipVisible = false
+			TweenService:Create(uiScale, TweenInfo.new(0.1, Enum.EasingStyle.Exponential, Enum.EasingDirection.In), {
+				Scale = 0.95,
+			}):Play()
+			TweenService:Create(tooltip, TweenInfo.new(0.1, Enum.EasingStyle.Exponential, Enum.EasingDirection.In), {
+				BackgroundTransparency = 0.3,
+			}).Completed:Connect(function()
+				if not tooltipVisible then
+					tooltip.Visible = false
+				end
+			end):Play()
+		end
+
+		local function updateTooltipPos()
+			tooltip.Position = UDim2.fromOffset(Mouse.X + 15, Mouse.Y + 20)
+		end
+
+		if HoverInstance then
+			HoverInstance.MouseEnter:Connect(function()
 				IsHovering = true
 				lastMousePos = Vector2.new(Mouse.X, Mouse.Y)
 				hoverTime = 0
-			end
-		end)
+			end)
 
-		RunService.RenderStepped:Connect(function(dt)
-			if not IsHovering then
-				return
-			end
+			HoverInstance.MouseLeave:Connect(function()
+				IsHovering = false
+				hideTooltip()
+			end)
 
-			local currentPos = Vector2.new(Mouse.X, Mouse.Y)
-			if (currentPos - lastMousePos).magnitude > 0 then
-				tooltip.Visible = false
-				hoverTime = 0
-				lastMousePos = currentPos
-			else
-				hoverTime += dt
-				if hoverTime >= threshold then
-					updateTooltipPos()
-					if not String.IsEmptyOrNull(label.Text) then
-						RunService.RenderStepped:Wait()
-						tooltip.Visible = true
+			HoverInstance:GetPropertyChangedSignal("AbsolutePosition"):Connect(function()
+				local p, pos, size = Mouse, HoverInstance.AbsolutePosition, HoverInstance.AbsoluteSize
+				if not (p.X >= pos.X and p.X <= pos.X + size.X and p.Y >= pos.Y and p.Y <= pos.Y + size.Y) then
+					IsHovering = false
+					hideTooltip()
+				else
+					IsHovering = true
+					lastMousePos = Vector2.new(Mouse.X, Mouse.Y)
+					hoverTime = 0
+				end
+			end)
+
+			RunService.RenderStepped:Connect(function(dt)
+				if not IsHovering then
+					return
+				end
+
+				local currentPos = Vector2.new(Mouse.X, Mouse.Y)
+				if (currentPos - lastMousePos).magnitude > 0 then
+					hideTooltip()
+					hoverTime = 0
+					lastMousePos = currentPos
+				else
+					hoverTime += dt
+					if hoverTime >= threshold then
+						updateTooltipPos()
+						if not String.IsEmptyOrNull(label.Text) then
+							showTooltip()
+						end
 					end
 				end
-			end
-		end)
-	end
+			end)
+		end
 
-	updateTooltipPos()
-	do -- Theme Binding
-		ThemeMethods.bindTheme(tooltip, "BackgroundColor3", "Backgrounds.Medium")
-		ThemeMethods.bindTheme(stroke, "Color", "Foregrounds.Dark")
-		ThemeMethods.bindTheme(label, "TextColor3", "Foregrounds.Light")
-	end
-	tooltip.ClipsDescendants = false
-	label.ClipsDescendants = false
+		updateTooltipPos()
+		do -- Theme Binding
+			ThemeMethods.bindTheme(tooltip, "BackgroundColor3", "Backgrounds.Medium")
+			ThemeMethods.bindTheme(stroke, "Color", "Foregrounds.Dark")
+			ThemeMethods.bindTheme(label, "TextColor3", "Foregrounds.Light")
+		end
+		tooltip.ClipsDescendants = false
+		label.ClipsDescendants = false
 
 	return label
 end
@@ -2181,6 +2462,22 @@ end
 -- Destroys The Interface
 function Starlight:Destroy()
 	task.wait()
+	-- Clean up custom features
+	if toastContainer and toastContainer.Parent then
+		toastContainer:Destroy()
+	end
+	if quickSettings.Instance and quickSettings.Instance.Parent then
+		quickSettings.Instance:Destroy()
+	end
+	if quickSettings.Backdrop and quickSettings.Backdrop.Parent then
+		quickSettings.Backdrop:Destroy()
+	end
+	if commandPalette.Instance and commandPalette.Instance.Parent then
+		commandPalette.Instance:Destroy()
+	end
+	if commandPalette.Backdrop and commandPalette.Backdrop.Parent then
+		commandPalette.Backdrop:Destroy()
+	end
 	StarlightUI:Destroy()
 end
 StarlightUI.Destroying:Connect(function()
@@ -2200,9 +2497,67 @@ StarlightUI.Destroying:Connect(function()
 		for _, blur in pairs(Camera:FindFirstChild("Starlight Blur Elements"):GetChildren()) do
 			blur:Destroy()
 		end
-		--Camera:FindFirstChild("Starlight Blur Elements"):Destroy()
 	end
+	-- Clean up acrylic blur
+	pcall(function()
+		local blurObj = Lighting:FindFirstChild("starlightBlur")
+		if blurObj then blurObj:Destroy() end
+	end)
 end)
+
+-- Search all elements across all tabs by name
+-- Returns: { { Element, Section, Tab, Groupbox }, ... }
+function Starlight:SearchElements(query: string)
+	if not Starlight.Window then return {} end
+	local results = {}
+	local lowerQuery = query:lower()
+
+	for _, section in pairs(Starlight.Window.TabSections) do
+		for _, tab in pairs(section.Tabs) do
+			for _, gb in pairs(tab.Groupboxes) do
+				for _, element in pairs(gb.Elements) do
+					if element.Values and element.Values.Name then
+						local name = element.Values.Name:lower()
+						if name:find(lowerQuery, 1, true) then
+							table.insert(results, {
+								Element = element,
+								Section = section,
+								Tab = tab,
+								Groupbox = gb,
+							})
+						end
+					end
+				end
+				-- Also search nested elements
+				for _, element in pairs(gb.Elements) do
+					if element.NestedElements then
+						for _, nested in pairs(element.NestedElements) do
+							if nested.Values and nested.Values.Name then
+								local name = nested.Values.Name:lower()
+								if name:find(lowerQuery, 1, true) then
+									table.insert(results, {
+										Element = nested,
+										Section = section,
+										Tab = tab,
+										Groupbox = gb,
+									})
+								end
+							end
+						end
+					end
+				end
+			end
+		end
+	end
+
+	return results
+end
+
+-- Window tab-change event system
+function Starlight.Window:OnTabChange(callback)
+	self._tabChangeCallbacks = self._tabChangeCallbacks or {}
+	table.insert(self._tabChangeCallbacks, callback)
+end
 
 function Starlight:Notification(data)
 	--[[
@@ -2470,6 +2825,1012 @@ function Starlight:Notification(data)
 		return newNotification
 	end)
 end
+
+--// SUBSECTION : Toast Notification System
+
+local toastContainer = nil
+local toastStack = {}
+local MAX_TOASTS = 5
+
+function Starlight:Toast(data)
+	--[[
+	ToastSettings = {
+		Title = string,
+		Content = string,
+		Intent = "info" | "success" | "warning" | "error", **
+		Duration = number, **
+		Icon = number, **
+	}
+	]]
+
+	data.Intent = data.Intent or "info"
+	data.Duration = data.Duration or 4
+
+	task.spawn(function()
+		if not toastContainer or not toastContainer.Parent then
+			toastContainer = Instance.new("Frame")
+			toastContainer.Name = "StarlightToastContainer"
+			toastContainer.Size = UDim2.new(0, 360, 1, 0)
+			toastContainer.Position = UDim2.new(1, -380, 0, 70)
+			toastContainer.BackgroundTransparency = 1
+			toastContainer.ClipsDescendants = true
+			toastContainer.ZIndex = 250
+			toastContainer.Parent = StarlightUI
+
+			local listLayout = Instance.new("UIListLayout")
+			listLayout.Parent = toastContainer
+			listLayout.HorizontalAlignment = Enum.HorizontalAlignment.Right
+			listLayout.VerticalAlignment = Enum.VerticalAlignment.Bottom
+			listLayout.Padding = UDim.new(0, 8)
+			listLayout.SortOrder = Enum.SortOrder.LayoutOrder
+		end
+
+		-- Intent-based colors
+		local intentColors = {
+			info = { accent = Color3.fromRGB(86, 156, 214), icon = "99001135290773" },
+			success = { accent = Color3.fromRGB(80, 200, 120), icon = "99001137575955" },
+			warning = { accent = Color3.fromRGB(230, 180, 60), icon = "99001135898817" },
+			error = { accent = Color3.fromRGB(220, 80, 80), icon = "99001136609349" },
+		}
+		local colors = intentColors[data.Intent] or intentColors.info
+
+		-- Build the toast frame from scratch (no model dependency)
+		local toast = Instance.new("Frame")
+		toast.Size = UDim2.new(0, 340, 0, 1)
+		toast.BackgroundColor3 = Color3.fromRGB(30, 30, 38)
+		toast.BackgroundTransparency = 0.15
+		toast.BorderSizePixel = 0
+		toast.ClipsDescendants = true
+		toast.ZIndex = 251
+		toast.Visible = false
+		toast.Parent = toastContainer
+
+		local corner = Instance.new("UICorner")
+		corner.CornerRadius = UDim.new(0, 10)
+		corner.Parent = toast
+
+		local stroke = Instance.new("UIStroke")
+		stroke.Color = Color3.fromRGB(50, 50, 60)
+		stroke.Thickness = 1
+		stroke.Transparency = 0.4
+		stroke.Parent = toast
+
+		-- Accent bar on the left
+		local accentBar = Instance.new("Frame")
+		accentBar.Size = UDim2.new(0, 3, 0, 0)
+		accentBar.Position = UDim2.new(0, 0, 0, 0)
+		accentBar.BackgroundColor3 = colors.accent
+		accentBar.BorderSizePixel = 0
+		accentBar.ZIndex = 253
+		accentBar.Parent = toast
+
+		local accentCorner = Instance.new("UICorner")
+		accentCorner.CornerRadius = UDim.new(0, 1.5)
+		accentCorner.Parent = accentBar
+
+		-- Icon
+		local iconLabel = Instance.new("ImageLabel")
+		iconLabel.Size = UDim2.new(0, 20, 0, 20)
+		iconLabel.Position = UDim2.new(0, 14, 0, 14)
+		iconLabel.BackgroundTransparency = 1
+		iconLabel.Image = "rbxassetid://" .. (data.Icon or colors.icon)
+		iconLabel.ImageColor3 = colors.accent
+		iconLabel.ZIndex = 252
+		iconLabel.Parent = toast
+
+		-- Title
+		local title = Instance.new("TextLabel")
+		title.Size = UDim2.new(1, -48, 0, 18)
+		title.Position = UDim2.new(0, 42, 0, 12)
+		title.BackgroundTransparency = 1
+		title.FontFace = Font.fromId(12187365364, Enum.FontWeight.SemiBold)
+		title.TextSize = 14
+		title.TextColor3 = Color3.fromRGB(220, 220, 230)
+		title.TextXAlignment = Enum.TextXAlignment.Left
+		title.TextYAlignment = Enum.TextYAlignment.Center
+		title.TextTruncate = Enum.TextTruncate.AtEnd
+		title.Text = data.Title or ""
+		title.ZIndex = 252
+		title.Parent = toast
+
+		-- Content
+		local content = Instance.new("TextLabel")
+		content.Size = UDim2.new(1, -48, 0, 16)
+		content.Position = UDim2.new(0, 42, 0, 30)
+		content.BackgroundTransparency = 1
+		content.FontFace = Font.fromId(12187365364, Enum.FontWeight.Regular)
+		content.TextSize = 12
+		content.TextColor3 = Color3.fromRGB(160, 160, 175)
+		content.TextXAlignment = Enum.TextXAlignment.Left
+		content.TextYAlignment = Enum.TextYAlignment.Center
+		content.TextTruncate = Enum.TextTruncate.AtEnd
+		content.Text = data.Content or ""
+		content.ZIndex = 252
+		content.Parent = toast
+
+		-- Close button
+		local closeBtn = Instance.new("ImageButton")
+		closeBtn.Size = UDim2.new(0, 18, 0, 18)
+		closeBtn.Position = UDim2.new(1, -26, 0, 14)
+		closeBtn.BackgroundTransparency = 1
+		closeBtn.Image = "rbxassetid://99001138365915"
+		closeBtn.ImageColor3 = Color3.fromRGB(140, 140, 155)
+		closeBtn.ZIndex = 253
+		closeBtn.Parent = toast
+
+		-- Dynamic sizing for multi-line content
+		local function calculateSize()
+			content.Size = UDim2.new(1, -48, 0, math.huge)
+			content.TextWrapped = true
+			local textHeight = content.TextBounds.Y
+			content.TextWrapped = false
+
+			local height = math.max(48, textHeight + 50)
+			toast.Size = UDim2.new(0, 340, 0, height)
+			accentBar.Size = UDim2.new(0, 3, 1, 0)
+			content.Size = UDim2.new(1, -48, 0, textHeight + 4)
+			content.TextWrapped = true
+		end
+		calculateSize()
+
+		-- Push older toasts up, cap at max
+		table.insert(toastStack, toast)
+		if #toastStack > MAX_TOASTS then
+			local oldest = table.remove(toastStack, 1)
+			if oldest and oldest.Parent then
+				oldest:Destroy()
+			end
+		end
+
+		-- Animate in — slide from right with fade
+		toast.Position = UDim2.new(1, 20, 0, 0)
+		toast.Visible = true
+
+		TweenService:Create(toast, TweenInfo.new(0.35, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out), {
+			Position = UDim2.new(1, -20, 0, 0),
+		}):Play()
+
+		toast.BackgroundTransparency = 1
+		TweenService:Create(toast, TweenInfo.new(0.25, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out), {
+			BackgroundTransparency = 0.15,
+		}):Play()
+
+		-- Auto-dismiss and cleanup
+		local dismissed = false
+
+		local function dismiss()
+			if dismissed then return end
+			dismissed = true
+
+			TweenService:Create(toast, TweenInfo.new(0.3, Enum.EasingStyle.Exponential, Enum.EasingDirection.In), {
+				Position = UDim2.new(1, 20, 0, 0),
+				BackgroundTransparency = 1,
+			}).Completed:Connect(function()
+				toast:Destroy()
+				for i, t in ipairs(toastStack) do
+					if t == toast then
+						table.remove(toastStack, i)
+						break
+					end
+				end
+			end):Play()
+			stroke.Transparency = 1
+		end
+
+		task.delay(data.Duration, dismiss)
+
+		closeBtn.MouseButton1Click:Connect(dismiss)
+		closeBtn.MouseEnter:Connect(function()
+			TweenService:Create(closeBtn, TweenInfo.new(0.15), { ImageColor3 = Color3.fromRGB(220, 220, 230) }):Play()
+		end)
+		closeBtn.MouseLeave:Connect(function()
+			TweenService:Create(closeBtn, TweenInfo.new(0.15), { ImageColor3 = Color3.fromRGB(140, 140, 155) }):Play()
+		end)
+	end)
+end
+
+--// SUBSECTION : Command Palette
+
+local commandPalette = {
+	Enabled = false,
+	Instance = nil,
+	Commands = {},
+	BuiltInRegistered = false,
+	SearchResults = {},
+	SelectedIndex = 1,
+}
+
+local function fuzzyMatch(text, pattern)
+	text = text:lower()
+	pattern = pattern:lower()
+	if pattern == "" then return true, 0 end
+
+	local pi = 1
+	local score = 0
+	for ci = 1, #pattern do
+		local char = pattern:sub(ci, ci)
+		local found = text:find(char, pi, true)
+		if not found then return false, 0 end
+		score = score + found - pi
+		pi = found + 1
+	end
+	return true, score
+end
+
+function Starlight.CommandPalette:RegisterCommand(command)
+	--[[
+	CommandSettings = {
+		Name = string,
+		Description = string, **
+		Icon = number, **
+		Category = string, **
+		Callback = function(),
+	}
+	]]
+	table.insert(commandPalette.Commands, command)
+end
+
+local function setupCommandPalette()
+	if commandPalette.BuiltInRegistered then return end
+	commandPalette.BuiltInRegistered = true
+
+	-- Built-in: theme switching
+	local themesList = {}
+	for name, _ in pairs(Themes) do
+		table.insert(themesList, name)
+	end
+	table.sort(themesList)
+
+	for _, themeName in ipairs(themesList) do
+		Starlight.CommandPalette:RegisterCommand({
+			Name = "Theme: " .. themeName,
+			Description = "Switch to " .. themeName .. " theme",
+			Category = "Theme",
+			Callback = function()
+				Starlight:SetTheme(themeName)
+				Starlight:Toast({ Title = "Theme Changed", Content = "Switched to " .. themeName, Intent = "info", Duration = 2 })
+			end,
+		})
+	end
+
+	-- Built-in: toggle acrylic
+	Starlight.CommandPalette:RegisterCommand({
+		Name = "Toggle Acrylic (Blur)",
+		Description = "Enable or disable acrylic blur effect",
+		Category = "Display",
+		Callback = function()
+			mainAcrylic = not mainAcrylic
+			acrylicEvent:Fire()
+			Starlight:Toast({ Title = "Acrylic " .. (mainAcrylic and "Enabled" or "Disabled"), Intent = "info", Duration = 2 })
+		end,
+	})
+
+	-- Built-in: toggle notifications
+	Starlight.CommandPalette:RegisterCommand({
+		Name = "Toggle Notifications Acrylic",
+		Description = "Enable or disable acrylic on notifications",
+		Category = "Display",
+		Callback = function()
+			notificationAcrylic = not notificationAcrylic
+			notificationAcrylicEvent:Fire()
+		end,
+	})
+
+	-- Built-in: minimize window
+	Starlight.CommandPalette:RegisterCommand({
+		Name = "Minimize Window",
+		Description = "Hide the main window",
+		Category = "Window",
+		Callback = function()
+			if Starlight.Window and Starlight.Window.Instance then
+				Hide(Starlight.Window.Instance, false, true, nil)
+				Starlight.Minimized = true
+			end
+		end,
+	})
+
+	-- Built-in: tab navigation
+	Starlight.CommandPalette:RegisterCommand({
+		Name = "Go to Home Tab",
+		Description = "Navigate to the home tab",
+		Category = "Navigation",
+		Callback = function()
+			if Starlight.Window and Starlight.Window.Instance then
+				-- Will be handled by the palette selecting the home button
+			end
+		end,
+	})
+end
+
+local function buildCommandPaletteUI()
+	if commandPalette.Instance and commandPalette.Instance.Parent then
+		commandPalette.Instance.Visible = not commandPalette.Instance.Visible
+		if commandPalette.Instance.Visible then
+			commandPalette.Instance.InputField:CaptureFocus()
+		end
+		return
+	end
+
+	-- Modal backdrop
+	local backdrop = Instance.new("Frame")
+	backdrop.Size = UDim2.new(1, 0, 1, 0)
+	backdrop.BackgroundColor3 = Color3.new(0, 0, 0)
+	backdrop.BackgroundTransparency = 0.5
+	backdrop.BorderSizePixel = 0
+	backdrop.ZIndex = 400
+	backdrop.Visible = false
+	backdrop.Parent = StarlightUI
+
+	-- Main container
+	local container = Instance.new("Frame")
+	container.Size = UDim2.new(0, 540, 0, 420)
+	container.Position = UDim2.new(0.5, -270, 0.3, -50)
+	container.BackgroundColor3 = Color3.fromRGB(25, 25, 32)
+	container.BackgroundTransparency = 0.1
+	container.BorderSizePixel = 0
+	container.ClipsDescendants = true
+	container.ZIndex = 401
+	container.Visible = false
+	container.Parent = StarlightUI
+
+	local containerCorner = Instance.new("UICorner")
+	containerCorner.CornerRadius = UDim.new(0, 14)
+	containerCorner.Parent = container
+
+	local containerStroke = Instance.new("UIStroke")
+	containerStroke.Color = Color3.fromRGB(50, 50, 60)
+	containerStroke.Thickness = 1
+	containerStroke.Transparency = 0.3
+	containerStroke.Parent = container
+
+	-- Input field
+	local inputBg = Instance.new("Frame")
+	inputBg.Size = UDim2.new(1, -24, 0, 44)
+	inputBg.Position = UDim2.new(0, 12, 0, 12)
+	inputBg.BackgroundColor3 = Color3.fromRGB(35, 35, 42)
+	inputBg.BackgroundTransparency = 0.3
+	inputBg.BorderSizePixel = 0
+	inputBg.ZIndex = 402
+	inputBg.Parent = container
+
+	local inputBgCorner = Instance.new("UICorner")
+	inputBgCorner.CornerRadius = UDim.new(0, 8)
+	inputBgCorner.Parent = inputBg
+
+	local inputIcon = Instance.new("ImageLabel")
+	inputIcon.Size = UDim2.new(0, 18, 0, 18)
+	inputIcon.Position = UDim2.new(0, 12, 0.5, -9)
+	inputIcon.BackgroundTransparency = 1
+	inputIcon.Image = "rbxassetid://99001135290773"
+	inputIcon.ImageColor3 = Color3.fromRGB(140, 140, 155)
+	inputIcon.ZIndex = 403
+	inputIcon.Parent = inputBg
+
+	local searchBox = Instance.new("TextBox")
+	searchBox.Size = UDim2.new(1, -42, 1, 0)
+	searchBox.Position = UDim2.new(0, 36, 0, 0)
+	searchBox.BackgroundTransparency = 1
+	searchBox.FontFace = Font.fromId(12187365364, Enum.FontWeight.Regular)
+	searchBox.TextSize = 15
+	searchBox.TextColor3 = Color3.fromRGB(220, 220, 230)
+	searchBox.PlaceholderText = "Search commands, themes, tabs..."
+	searchBox.PlaceholderColor3 = Color3.fromRGB(120, 120, 135)
+	searchBox.TextXAlignment = Enum.TextXAlignment.Left
+	searchBox.ClearTextOnFocus = false
+	searchBox.ZIndex = 403
+	searchBox.Parent = inputBg
+
+	-- Results list
+	local resultsList = Instance.new("ScrollingFrame")
+	resultsList.Size = UDim2.new(1, -24, 1, -80)
+	resultsList.Position = UDim2.new(0, 12, 0, 64)
+	resultsList.BackgroundTransparency = 1
+	resultsList.BorderSizePixel = 0
+	resultsList.ScrollBarThickness = 4
+	resultsList.ScrollBarImageColor3 = Color3.fromRGB(60, 60, 70)
+	resultsList.CanvasSize = UDim2.new(0, 0, 0, 0)
+	resultsList.ZIndex = 402
+	resultsList.Parent = container
+
+	local listLayout = Instance.new("UIListLayout")
+	listLayout.Parent = resultsList
+	listLayout.Padding = UDim.new(0, 2)
+	listLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+	-- Shortcut hint at bottom
+	local hint = Instance.new("TextLabel")
+	hint.Size = UDim2.new(1, -24, 0, 24)
+	hint.Position = UDim2.new(0, 12, 1, -40)
+	hint.BackgroundTransparency = 1
+	hint.FontFace = Font.fromId(12187365364, Enum.FontWeight.Regular)
+	hint.TextSize = 11
+	hint.TextColor3 = Color3.fromRGB(100, 100, 115)
+	hint.TextXAlignment = Enum.TextXAlignment.Left
+	hint.Text = "↑↓ Navigate  ·  Enter Select  ·  Esc Close"
+	hint.ZIndex = 402
+	hint.Parent = container
+
+	commandPalette.Instance = container
+	commandPalette.Backdrop = backdrop
+	commandPalette.InputField = searchBox
+	commandPalette.ResultsList = resultsList
+	commandPalette.ListLayout = listLayout
+
+	-- Result rendering
+	local resultButtons = {}
+
+	local function renderResults(query)
+		for _, btn in ipairs(resultButtons) do
+			btn:Destroy()
+		end
+		resultButtons = {}
+
+		if query == "" then
+			resultsList.CanvasSize = UDim2.new(0, 0, 0, 0)
+			commandPalette.SearchResults = {}
+			return
+		end
+
+		local results = {}
+		for _, cmd in ipairs(commandPalette.Commands) do
+			local match, score = fuzzyMatch(cmd.Name, query)
+			if match then
+				table.insert(results, { command = cmd, score = score })
+			end
+		end
+
+		-- Score by similarity (lower score = better match)
+		table.sort(results, function(a, b) return a.score < b.score end)
+
+		-- Limit results
+		local maxResults = 10
+		if #results > maxResults then
+			results = { table.unpack(results, 1, maxResults) }
+		end
+
+		commandPalette.SearchResults = results
+		commandPalette.SelectedIndex = 1
+
+		local canvasHeight = 0
+		for i, res in ipairs(results) do
+			local cmd = res.command
+
+			local btn = Instance.new("Frame")
+			btn.Size = UDim2.new(1, 0, 0, 38)
+			btn.BackgroundColor3 = Color3.fromRGB(40, 40, 48)
+			btn.BackgroundTransparency = 0.8
+			btn.BorderSizePixel = 0
+			btn.ZIndex = 403
+			btn.Parent = resultsList
+
+			local btnCorner = Instance.new("UICorner")
+			btnCorner.CornerRadius = UDim.new(0, 6)
+			btnCorner.Parent = btn
+
+			-- Category badge
+			if cmd.Category then
+				local badge = Instance.new("TextLabel")
+				badge.Size = UDim2.new(0, 0, 0, 18)
+				badge.Position = UDim2.new(0, 10, 0.5, -9)
+				badge.BackgroundColor3 = Color3.fromRGB(55, 55, 65)
+				badge.BackgroundTransparency = 0.5
+				badge.FontFace = Font.fromId(12187365364, Enum.FontWeight.Medium)
+				badge.TextSize = 10
+				badge.TextColor3 = Color3.fromRGB(140, 140, 165)
+				badge.TextXAlignment = Enum.TextXAlignment.Center
+				badge.Text = cmd.Category
+				badge.ZIndex = 404
+				badge.Parent = btn
+
+				local badgePadding = Instance.new("UIPadding")
+				badgePadding.PaddingLeft = UDim.new(0, 8)
+				badgePadding.PaddingRight = UDim.new(0, 8)
+				badgePadding.Parent = badge
+
+				local badgeCorner = Instance.new("UICorner")
+				badgeCorner.CornerRadius = UDim.new(0, 4)
+				badgeCorner.Parent = badge
+
+				-- Size to text
+				badge.Size = UDim2.new(0, badge.TextBounds.X + 16, 0, 18)
+			end
+
+			-- Command name
+			local nameLabel = Instance.new("TextLabel")
+			nameLabel.Size = UDim2.new(1, -120, 0, 18)
+			nameLabel.Position = UDim2.new(0, cmd.Category and 90 or 14, 0, 5)
+			nameLabel.BackgroundTransparency = 1
+			nameLabel.FontFace = Font.fromId(12187365364, Enum.FontWeight.Medium)
+			nameLabel.TextSize = 13
+			nameLabel.TextColor3 = Color3.fromRGB(220, 220, 230)
+			nameLabel.TextXAlignment = Enum.TextXAlignment.Left
+			nameLabel.Text = cmd.Name
+			nameLabel.ZIndex = 404
+			nameLabel.Parent = btn
+
+			-- Description
+			local descLabel = Instance.new("TextLabel")
+			descLabel.Size = UDim2.new(1, -120, 0, 14)
+			descLabel.Position = UDim2.new(0, cmd.Category and 90 or 14, 0, 21)
+			descLabel.BackgroundTransparency = 1
+			descLabel.FontFace = Font.fromId(12187365364, Enum.FontWeight.Regular)
+			descLabel.TextSize = 11
+			descLabel.TextColor3 = Color3.fromRGB(140, 140, 155)
+			descLabel.TextXAlignment = Enum.TextXAlignment.Left
+			descLabel.TextTruncate = Enum.TextTruncate.AtEnd
+			descLabel.Text = cmd.Description or ""
+			descLabel.ZIndex = 404
+			descLabel.Parent = btn
+
+			-- Selection indicator
+			if i == 1 then
+				btn.BackgroundTransparency = 0.3
+				btn.BackgroundColor3 = Color3.fromRGB(60, 60, 80)
+			end
+
+			table.insert(resultButtons, btn)
+			canvasHeight = canvasHeight + 40
+		end
+
+		resultsList.CanvasSize = UDim2.new(0, 0, 0, canvasHeight)
+	end
+
+	-- Input handling
+	local changeConn = searchBox:GetPropertyChangedSignal("Text"):Connect(function()
+		renderResults(searchBox.Text)
+	end)
+
+	-- Key handling on the search box
+	local function onInputBegan(input)
+		if input.KeyCode == Enum.KeyCode.Escape then
+			if commandPalette.Instance then
+				commandPalette.Instance.Visible = false
+				commandPalette.Backdrop.Visible = false
+			end
+			return true
+		end
+
+		if input.KeyCode == Enum.KeyCode.Down then
+			local results = commandPalette.SearchResults
+			if #results > 0 then
+				commandPalette.SelectedIndex = math.min(commandPalette.SelectedIndex + 1, #results)
+				renderResults(searchBox.Text)
+			end
+			return true
+		end
+
+		if input.KeyCode == Enum.KeyCode.Up then
+			local results = commandPalette.SearchResults
+			if #results > 0 then
+				commandPalette.SelectedIndex = math.max(commandPalette.SelectedIndex - 1, 1)
+				renderResults(searchBox.Text)
+			end
+			return true
+		end
+
+		if input.KeyCode == Enum.KeyCode.Return then
+			local results = commandPalette.SearchResults
+			local idx = commandPalette.SelectedIndex
+			if #results > 0 and results[idx] then
+				results[idx].command.Callback()
+				commandPalette.Instance.Visible = false
+				commandPalette.Backdrop.Visible = false
+			end
+			return true
+		end
+	end
+
+	searchBox.FocusLost:Connect(function(enterPressed)
+		if enterPressed then
+			local results = commandPalette.SearchResults
+			local idx = commandPalette.SelectedIndex
+			if #results > 0 and results[idx] then
+				results[idx].command.Callback()
+				commandPalette.Instance.Visible = false
+				commandPalette.Backdrop.Visible = false
+			end
+		end
+	end)
+
+	searchBox.InputBegan:Connect(onInputBegan)
+
+	-- Close on backdrop click
+	backdrop.MouseButton1Click:Connect(function()
+		commandPalette.Instance.Visible = false
+		commandPalette.Backdrop.Visible = false
+	end)
+
+	return container, backdrop
+end
+
+-- Global keybind: Ctrl+K / Cmd+K
+UserInputService.InputBegan:Connect(function(input, gameProcessed)
+	if gameProcessed then return end
+	if input.KeyCode == Enum.KeyCode.K and (UserInputService:IsKeyDown(Enum.KeyCode.LeftControl) or UserInputService:IsKeyDown(Enum.KeyCode.RightControl) or UserInputService:IsKeyDown(Enum.KeyCode.LeftMeta) or UserInputService:IsKeyDown(Enum.KeyCode.RightMeta)) then
+		setupCommandPalette()
+		local container = buildCommandPaletteUI()
+		if container then
+			container.Visible = not container.Visible
+			commandPalette.Backdrop.Visible = container.Visible
+			if container.Visible and commandPalette.InputField then
+				task.wait(0.05)
+				commandPalette.InputField:CaptureFocus()
+				commandPalette.InputField.Text = ""
+
+				-- Clear results on open
+				for _, child in ipairs(commandPalette.ResultsList:GetChildren()) do
+					if child.ClassName == "Frame" then
+						child:Destroy()
+					end
+				end
+				commandPalette.SearchResults = {}
+				commandPalette.ResultsList.CanvasSize = UDim2.new(0, 0, 0, 0)
+			end
+		end
+	end
+	end)
+
+--// SUBSECTION : Quick Settings Panel
+
+local quickSettings = {
+	Instance = nil,
+	Backdrop = nil,
+	Visible = false,
+}
+
+function Starlight:ToggleQuickSettings()
+	if not quickSettings.Instance or not quickSettings.Instance.Parent then
+		buildQuickSettings()
+	end
+
+	quickSettings.Visible = not quickSettings.Visible
+	if quickSettings.Backdrop then
+		quickSettings.Backdrop.Visible = quickSettings.Visible
+	end
+	if quickSettings.Instance then
+		quickSettings.Instance.Visible = quickSettings.Visible
+
+		if quickSettings.Visible then
+			TweenService:Create(quickSettings.Instance, TweenInfo.new(0.3, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out), {
+				Position = UDim2.new(1, -320, 0.5, 0),
+			}):Play()
+		else
+			TweenService:Create(quickSettings.Instance, TweenInfo.new(0.25, Enum.EasingStyle.Exponential, Enum.EasingDirection.In), {
+				Position = UDim2.new(1, 20, 0.5, 0),
+			}):Play()
+		end
+	end
+end
+
+-- Register command palette entry for Quick Settings
+Starlight.CommandPalette:RegisterCommand({
+	Name = "Toggle Quick Settings",
+	Description = "Open the quick settings panel",
+	Category = "Window",
+	Callback = function()
+		Starlight:ToggleQuickSettings()
+	end,
+})
+
+local function buildQuickSettings()
+	if quickSettings.Instance and quickSettings.Instance.Parent then
+		return
+	end
+
+	-- Semi-transparent backdrop
+	local backdrop = Instance.new("Frame")
+	backdrop.Size = UDim2.new(1, 0, 1, 0)
+	backdrop.BackgroundColor3 = Color3.new(0, 0, 0)
+	backdrop.BackgroundTransparency = 0.4
+	backdrop.BorderSizePixel = 0
+	backdrop.ZIndex = 350
+	backdrop.Visible = false
+	backdrop.Parent = StarlightUI
+
+	backdrop.MouseButton1Click:Connect(function()
+		Starlight:ToggleQuickSettings()
+	end)
+
+	-- Main panel
+	local panel = Instance.new("Frame")
+	panel.Size = UDim2.new(0, 300, 0, 380)
+	panel.Position = UDim2.new(1, 20, 0.5, -190)
+	panel.AnchorPoint = Vector2.new(0, 0.5)
+	panel.BackgroundColor3 = Color3.fromRGB(26, 26, 33)
+	panel.BackgroundTransparency = 0.12
+	panel.BorderSizePixel = 0
+	panel.ClipsDescendants = true
+	panel.ZIndex = 351
+	panel.Visible = false
+	panel.Parent = StarlightUI
+
+	local panelCorner = Instance.new("UICorner")
+	panelCorner.CornerRadius = UDim.new(0, 14)
+	panelCorner.Parent = panel
+
+	local panelStroke = Instance.new("UIStroke")
+	panelStroke.Color = Color3.fromRGB(50, 50, 60)
+	panelStroke.Thickness = 1
+	panelStroke.Transparency = 0.3
+	panelStroke.Parent = panel
+
+	-- Title
+	local titleLabel = Instance.new("TextLabel")
+	titleLabel.Size = UDim2.new(1, -24, 0, 24)
+	titleLabel.Position = UDim2.new(0, 16, 0, 14)
+	titleLabel.BackgroundTransparency = 1
+	titleLabel.FontFace = Font.fromId(12187365364, Enum.FontWeight.SemiBold)
+	titleLabel.TextSize = 16
+	titleLabel.TextColor3 = Color3.fromRGB(230, 230, 240)
+	titleLabel.TextXAlignment = Enum.TextXAlignment.Left
+	titleLabel.Text = "Quick Settings"
+	titleLabel.ZIndex = 352
+	titleLabel.Parent = panel
+
+	-- Theme section
+	local themesLabel = Instance.new("TextLabel")
+	themesLabel.Size = UDim2.new(1, -24, 0, 16)
+	themesLabel.Position = UDim2.new(0, 16, 0, 48)
+	themesLabel.BackgroundTransparency = 1
+	themesLabel.FontFace = Font.fromId(12187365364, Enum.FontWeight.Medium)
+	themesLabel.TextSize = 11
+	themesLabel.TextColor3 = Color3.fromRGB(140, 140, 160)
+	themesLabel.TextXAlignment = Enum.TextXAlignment.Left
+	themesLabel.Text = "THEMES"
+	themesLabel.ZIndex = 352
+	themesLabel.Parent = panel
+
+	-- Theme swatches in a grid
+	local swatchContainer = Instance.new("Frame")
+	swatchContainer.Size = UDim2.new(1, -32, 0, 80)
+	swatchContainer.Position = UDim2.new(0, 16, 0, 66)
+	swatchContainer.BackgroundTransparency = 1
+	swatchContainer.ZIndex = 352
+	swatchContainer.Parent = panel
+
+	local swatchGrid = Instance.new("UIGridLayout")
+	swatchGrid.Parent = swatchContainer
+	swatchGrid.CellSize = UDim2.new(0, 60, 0, 34)
+	swatchGrid.CellPadding = UDim2.new(0, 8, 0, 8)
+	swatchGrid.FillDirection = Enum.FillDirection.Horizontal
+	swatchGrid.HorizontalAlignment = Enum.HorizontalAlignment.Left
+	swatchGrid.VerticalAlignment = Enum.VerticalAlignment.Top
+	swatchGrid.SortOrder = Enum.SortOrder.LayoutOrder
+
+	-- Build theme swatch buttons
+	local themesList = {}
+	for name, _ in pairs(Themes) do
+		table.insert(themesList, name)
+	end
+	table.sort(themesList)
+
+	for _, themeName in ipairs(themesList) do
+		local btn = Instance.new("ImageButton")
+		btn.Size = UDim2.new(0, 60, 0, 34)
+		btn.BackgroundColor3 = Themes[themeName].Backgrounds.Medium
+		btn.BorderSizePixel = 0
+		btn.ZIndex = 353
+		btn.Parent = swatchContainer
+
+		local btnCorner = Instance.new("UICorner")
+		btnCorner.CornerRadius = UDim.new(0, 6)
+		btnCorner.Parent = btn
+
+		local accentColors = Themes[themeName].Accents.Main
+		local accentLine = Instance.new("Frame")
+		accentLine.Size = UDim2.new(1, 0, 0, 2)
+		accentLine.Position = UDim2.new(0, 0, 1, -2)
+		accentLine.BackgroundColor3 = accentColors.Keypoints[1] and accentColors.Keypoints[1].Value or Color3.fromRGB(200, 200, 200)
+		accentLine.BorderSizePixel = 0
+		accentLine.ZIndex = 354
+		accentLine.Parent = btn
+
+		local shortName = themeName
+		if #shortName > 10 then
+			shortName = string.sub(shortName, 1, 9) .. ".."
+		end
+
+		local nameOverlay = Instance.new("TextLabel")
+		nameOverlay.Size = UDim2.new(1, -4, 1, -4)
+		nameOverlay.Position = UDim2.new(0, 2, 0, 2)
+		nameOverlay.BackgroundTransparency = 1
+		nameOverlay.FontFace = Font.fromId(12187365364, Enum.FontWeight.Medium)
+		nameOverlay.TextSize = 9
+		nameOverlay.TextColor3 = Themes[themeName].Foregrounds.Active
+		nameOverlay.Text = shortName
+		nameOverlay.ZIndex = 355
+		nameOverlay.Parent = btn
+
+		btn.MouseButton1Click:Connect(function()
+			Starlight:SetTheme(themeName)
+			Starlight:Toast({ Title = "Theme: " .. themeName, Intent = "info", Duration = 2 })
+		end)
+
+		btn.MouseEnter:Connect(function()
+			TweenService:Create(btn, TweenInfo.new(0.15), { BackgroundColor3 = Themes[themeName].Backgrounds.Light }):Play()
+		end)
+		btn.MouseLeave:Connect(function()
+			TweenService:Create(btn, TweenInfo.new(0.15), { BackgroundColor3 = Themes[themeName].Backgrounds.Medium }):Play()
+		end)
+	end
+
+	-- Toggle section
+	local togglesLabel = Instance.new("TextLabel")
+	togglesLabel.Size = UDim2.new(1, -24, 0, 16)
+	togglesLabel.Position = UDim2.new(0, 16, 0, 162)
+	togglesLabel.BackgroundTransparency = 1
+	togglesLabel.FontFace = Font.fromId(12187365364, Enum.FontWeight.Medium)
+	togglesLabel.TextSize = 11
+	togglesLabel.TextColor3 = Color3.fromRGB(140, 140, 160)
+	togglesLabel.TextXAlignment = Enum.TextXAlignment.Left
+	togglesLabel.Text = "TOGGLES"
+	togglesLabel.ZIndex = 352
+	togglesLabel.Parent = panel
+
+	-- Toggle row builder
+	local function createToggleRow(parent, yOffset, label, getValue, setValue)
+		local row = Instance.new("Frame")
+		row.Size = UDim2.new(1, -32, 0, 36)
+		row.Position = UDim2.new(0, 16, 0, yOffset)
+		row.BackgroundColor3 = Color3.fromRGB(40, 40, 48)
+		row.BackgroundTransparency = 0.7
+		row.BorderSizePixel = 0
+		row.ZIndex = 352
+		row.Parent = parent
+
+		local rowCorner = Instance.new("UICorner")
+		rowCorner.CornerRadius = UDim.new(0, 8)
+		rowCorner.Parent = row
+
+		local rowLabel = Instance.new("TextLabel")
+		rowLabel.Size = UDim2.new(1, -50, 1, 0)
+		rowLabel.Position = UDim2.new(0, 12, 0, 0)
+		rowLabel.BackgroundTransparency = 1
+		rowLabel.FontFace = Font.fromId(12187365364, Enum.FontWeight.Medium)
+		rowLabel.TextSize = 12
+		rowLabel.TextColor3 = Color3.fromRGB(200, 200, 210)
+		rowLabel.TextXAlignment = Enum.TextXAlignment.Left
+		rowLabel.Text = label
+		rowLabel.ZIndex = 353
+		rowLabel.Parent = row
+
+		local toggleBtn = Instance.new("Frame")
+		toggleBtn.Size = UDim2.new(0, 38, 0, 20)
+		toggleBtn.Position = UDim2.new(1, -46, 0.5, -10)
+		toggleBtn.BackgroundColor3 = Color3.fromRGB(50, 50, 60)
+		toggleBtn.BorderSizePixel = 0
+		toggleBtn.ZIndex = 353
+		toggleBtn.Parent = row
+
+		local toggleCorner = Instance.new("UICorner")
+		toggleCorner.CornerRadius = UDim.new(0, 10)
+		toggleCorner.Parent = toggleBtn
+
+		local toggleKnob = Instance.new("Frame")
+		toggleKnob.Size = UDim2.new(0, 16, 0, 16)
+		toggleKnob.Position = UDim2.new(0, 2, 0.5, -8)
+		toggleKnob.BackgroundColor3 = Color3.fromRGB(200, 200, 210)
+		toggleKnob.BorderSizePixel = 0
+		toggleKnob.ZIndex = 354
+		toggleKnob.Parent = toggleBtn
+
+		local knobCorner = Instance.new("UICorner")
+		knobCorner.CornerRadius = UDim.new(0, 8)
+		knobCorner.Parent = toggleKnob
+
+		local function updateToggleUI(value)
+			if value then
+				TweenService:Create(toggleBtn, TweenInfo.new(0.2, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out), {
+					BackgroundColor3 = Color3.fromRGB(86, 156, 214),
+				}):Play()
+				TweenService:Create(toggleKnob, TweenInfo.new(0.2, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out), {
+					Position = UDim2.new(0, 20, 0.5, -8),
+					BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+				}):Play()
+			else
+				TweenService:Create(toggleBtn, TweenInfo.new(0.2, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out), {
+					BackgroundColor3 = Color3.fromRGB(50, 50, 60),
+				}):Play()
+				TweenService:Create(toggleKnob, TweenInfo.new(0.2, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out), {
+					Position = UDim2.new(0, 2, 0.5, -8),
+					BackgroundColor3 = Color3.fromRGB(200, 200, 210),
+				}):Play()
+			end
+		end
+
+		updateToggleUI(getValue())
+		row.InputBegan:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseButton1 then
+				local newVal = not getValue()
+				setValue(newVal)
+				updateToggleUI(newVal)
+			end
+		end)
+
+		return row, toggleBtn
+	end
+
+	createToggleRow(panel, 184, "Acrylic Blur",
+		function() return mainAcrylic end,
+		function(val) mainAcrylic = val; acrylicEvent:Fire() end
+	)
+
+	createToggleRow(panel, 224, "Notif. Acrylic",
+		function() return notificationAcrylic end,
+		function(val) notificationAcrylic = val; notificationAcrylicEvent:Fire() end
+	)
+
+	-- Keyboard shortcuts section
+	local shortcutsLabel = Instance.new("TextLabel")
+	shortcutsLabel.Size = UDim2.new(1, -24, 0, 16)
+	shortcutsLabel.Position = UDim2.new(0, 16, 0, 276)
+	shortcutsLabel.BackgroundTransparency = 1
+	shortcutsLabel.FontFace = Font.fromId(12187365364, Enum.FontWeight.Medium)
+	shortcutsLabel.TextSize = 11
+	shortcutsLabel.TextColor3 = Color3.fromRGB(140, 140, 160)
+	shortcutsLabel.TextXAlignment = Enum.TextXAlignment.Left
+	shortcutsLabel.Text = "SHORTCUTS"
+	shortcutsLabel.ZIndex = 352
+	shortcutsLabel.Parent = panel
+
+	local shortcutsList = {
+		{ key = "Ctrl+K", desc = "Command Palette" },
+		{ key = "Ctrl+Q", desc = "Quick Settings" },
+		{ key = "K", desc = "Toggle Window" },
+	}
+
+	for i, s in ipairs(shortcutsList) do
+		local shortcutRow = Instance.new("Frame")
+		shortcutRow.Size = UDim2.new(1, -32, 0, 24)
+		shortcutRow.Position = UDim2.new(0, 16, 0, 296 + (i - 1) * 26)
+		shortcutRow.BackgroundTransparency = 1
+		shortcutRow.ZIndex = 352
+		shortcutRow.Parent = panel
+
+		local keyLabel = Instance.new("TextLabel")
+		keyLabel.Size = UDim2.new(0, 80, 1, 0)
+		keyLabel.BackgroundColor3 = Color3.fromRGB(45, 45, 55)
+		keyLabel.BackgroundTransparency = 0.5
+		keyLabel.FontFace = Font.fromId(12187365364, Enum.FontWeight.Medium)
+		keyLabel.TextSize = 11
+		keyLabel.TextColor3 = Color3.fromRGB(160, 160, 175)
+		keyLabel.Text = s.key
+		keyLabel.ZIndex = 353
+		keyLabel.Parent = shortcutRow
+
+		local keyCorner = Instance.new("UICorner")
+		keyCorner.CornerRadius = UDim.new(0, 4)
+		keyCorner.Parent = keyLabel
+
+		keyLabel.Size = UDim2.new(0, keyLabel.TextBounds.X + 12, 1, 0)
+
+		local descLabel = Instance.new("TextLabel")
+		descLabel.Size = UDim2.new(1, -100, 1, 0)
+		descLabel.Position = UDim2.new(0, keyLabel.TextBounds.X + 20, 0, 0)
+		descLabel.BackgroundTransparency = 1
+		descLabel.FontFace = Font.fromId(12187365364, Enum.FontWeight.Regular)
+		descLabel.TextSize = 11
+		descLabel.TextColor3 = Color3.fromRGB(140, 140, 155)
+		descLabel.TextXAlignment = Enum.TextXAlignment.Left
+		descLabel.Text = s.desc
+		descLabel.ZIndex = 353
+		descLabel.Parent = shortcutRow
+	end
+
+	-- Finalize panel size
+	panel.Size = UDim2.new(0, 300, 0, 350)
+
+	quickSettings.Instance = panel
+	quickSettings.Backdrop = backdrop
+end
+
+-- Ctrl+Q for Quick Settings
+UserInputService.InputBegan:Connect(function(input, gameProcessed)
+	if gameProcessed then return end
+	if input.KeyCode == Enum.KeyCode.Q and (UserInputService:IsKeyDown(Enum.KeyCode.LeftControl) or UserInputService:IsKeyDown(Enum.KeyCode.RightControl)) then
+		Starlight:ToggleQuickSettings()
+	end
+end)
 
 -- Create the Window
 function Starlight:CreateWindow(WindowSettings)
@@ -3322,6 +4683,37 @@ function Starlight:CreateWindow(WindowSettings)
 			Tab.Active = true
 			Starlight.Window.CurrentTab = Tab
 			tabs.UIPageLayout:JumpTo(Tab.Instances.Page)
+
+			-- Stagger fade-in animation for groupboxes
+			task.spawn(function()
+				task.wait(0.08)
+				-- Fire OnTabChange callbacks
+				if Starlight.Window and Starlight.Window._tabChangeCallbacks then
+					for _, cb in ipairs(Starlight.Window._tabChangeCallbacks) do
+						pcall(cb, Tab)
+					end
+				end
+				local gbList = {}
+				for _, child in ipairs(Tab.Instances.Page:GetChildren()) do
+					if child.ClassName == "Frame" and child.Name:find("GROUPBOX_") then
+						table.insert(gbList, child)
+					end
+				end
+				table.sort(gbList, function(a, b) return a.LayoutOrder < b.LayoutOrder end)
+				for i, gb in ipairs(gbList) do
+					local backdrop = gb:FindFirstChild("PART_Backdrop")
+					if backdrop then
+						backdrop.BackgroundTransparency = 1
+					end
+					task.delay((i - 1) * 0.04, function()
+						if backdrop and backdrop.Parent then
+							TweenService:Create(backdrop, TweenInfo.new(0.35, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out), {
+								BackgroundTransparency = 0,
+							}):Play()
+						end
+					end)
+				end
+			end)
 		end
 
 		repeat
@@ -3753,6 +5145,37 @@ function Starlight:CreateWindow(WindowSettings)
 				Tab.Active = true
 				Starlight.Window.CurrentTab = Tab
 				tabs.UIPageLayout:JumpTo(Tab.Instances.Page)
+
+				-- Stagger fade-in animation for groupboxes
+				task.spawn(function()
+					task.wait(0.08)
+					-- Fire OnTabChange callbacks
+					if Starlight.Window and Starlight.Window._tabChangeCallbacks then
+						for _, cb in ipairs(Starlight.Window._tabChangeCallbacks) do
+							pcall(cb, Tab)
+						end
+					end
+					local gbList = {}
+					for _, child in ipairs(Tab.Instances.Page:GetChildren()) do
+						if child.ClassName == "Frame" and child.Name:find("GROUPBOX_") then
+							table.insert(gbList, child)
+						end
+					end
+					table.sort(gbList, function(a, b) return a.LayoutOrder < b.LayoutOrder end)
+					for i, gb in ipairs(gbList) do
+						local backdrop = gb:FindFirstChild("PART_Backdrop")
+						if backdrop then
+							backdrop.BackgroundTransparency = 1
+						end
+						task.delay((i - 1) * 0.04, function()
+							if backdrop and backdrop.Parent then
+								TweenService:Create(backdrop, TweenInfo.new(0.35, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out), {
+									BackgroundTransparency = 0,
+								}):Play()
+							end
+						end)
+					end
+				end)
 			end
 
 			if Starlight.Window.CurrentTab == nil then
@@ -3916,6 +5339,37 @@ function Starlight:CreateWindow(WindowSettings)
 				Tab.Active = true
 				Starlight.Window.CurrentTab = Tab
 				tabs.UIPageLayout:JumpTo(Tab.Instances.Page)
+
+				-- Stagger fade-in animation for groupboxes
+				task.spawn(function()
+					task.wait(0.08)
+					-- Fire OnTabChange callbacks
+					if Starlight.Window and Starlight.Window._tabChangeCallbacks then
+						for _, cb in ipairs(Starlight.Window._tabChangeCallbacks) do
+							pcall(cb, Tab)
+						end
+					end
+					local gbList = {}
+					for _, child in ipairs(Tab.Instances.Page:GetChildren()) do
+						if child.ClassName == "Frame" and child.Name:find("GROUPBOX_") then
+							table.insert(gbList, child)
+						end
+					end
+					table.sort(gbList, function(a, b) return a.LayoutOrder < b.LayoutOrder end)
+					for i, gb in ipairs(gbList) do
+						local backdrop = gb:FindFirstChild("PART_Backdrop")
+						if backdrop then
+							backdrop.BackgroundTransparency = 1
+						end
+						task.delay((i - 1) * 0.04, function()
+							if backdrop and backdrop.Parent then
+								TweenService:Create(backdrop, TweenInfo.new(0.35, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out), {
+									BackgroundTransparency = 0,
+								}):Play()
+							end
+						end)
+					end
+				end)
 			end
 
 			if Starlight.Window.CurrentTab == nil then
@@ -8809,11 +10263,430 @@ function Starlight:CreateWindow(WindowSettings)
 
 					Starlight.Window.TabSections[Name].Tabs[TabIndex].Groupboxes[GroupIndex].Elements[Index] = Element
 					return Starlight.Window.TabSections[Name].Tabs[TabIndex].Groupboxes[GroupIndex].Elements[Index]
-				end
+					end
 
-				--// ENDSUBSECTION
+					--// SUBSECTION : New Element Types (Code-Driven)
 
-				Groupbox.Instance.Parent = Tab.Instances.Page["Column_" .. GroupboxSettings.Column]
+					function Groupbox:CreateProgress(ElementSettings, Index)
+						--[[
+						ElementSettings = {
+							Name = string,
+							CurrentValue = number, ** (0-1)
+							Determinate = bool, ** (default true)
+							ShowLabel = bool, **
+							Callback = function(number), **
+						}
+						]]
+
+						ElementSettings.CurrentValue = ElementSettings.CurrentValue or 0
+						ElementSettings.Determinate = if ElementSettings.Determinate == nil then true else ElementSettings.Determinate
+						ElementSettings.ShowLabel = if ElementSettings.ShowLabel == nil then true else ElementSettings.ShowLabel
+
+						local Element = {
+							Values = ElementSettings,
+							Class = "Progress",
+							IgnoreConfig = true,
+						}
+
+						task.spawn(function()
+							Element.Instance = Instance.new("Frame")
+							Element.Instance.Name = "PROGRESS_" .. Index
+							Element.Instance.Size = UDim2.new(1, 0, 0, 42)
+							Element.Instance.BackgroundTransparency = 1
+							Element.Instance.Parent = Groupbox.ParentingItem
+
+							-- Header
+							local header = Instance.new("TextLabel")
+							header.Size = UDim2.new(1, -12, 0, 16)
+							header.Position = UDim2.new(0, 6, 0, 4)
+							header.BackgroundTransparency = 1
+							header.FontFace = Font.fromId(12187365364, Enum.FontWeight.Medium)
+							header.TextSize = 13
+							header.TextXAlignment = Enum.TextXAlignment.Left
+							header.Text = ElementSettings.Name
+							header.Parent = Element.Instance
+							ThemeMethods.bindTheme(header, "TextColor3", "Foregrounds.Light")
+
+							-- Value label
+							local valueLabel = Instance.new("TextLabel")
+							valueLabel.Size = UDim2.new(0, 40, 0, 16)
+							valueLabel.Position = UDim2.new(1, -46, 0, 4)
+							valueLabel.BackgroundTransparency = 1
+							valueLabel.FontFace = Font.fromId(12187365364, Enum.FontWeight.Medium)
+							valueLabel.TextSize = 12
+							valueLabel.TextXAlignment = Enum.TextXAlignment.Right
+							valueLabel.Text = math.floor(ElementSettings.CurrentValue * 100) .. "%"
+							valueLabel.Parent = Element.Instance
+							ThemeMethods.bindTheme(valueLabel, "TextColor3", "Foregrounds.Medium")
+
+							-- Track background
+							local track = Instance.new("Frame")
+							track.Size = UDim2.new(1, -12, 0, 8)
+							track.Position = UDim2.new(0, 6, 0, 24)
+							track.BackgroundColor3 = Color3.fromRGB(50, 50, 58)
+							track.BorderSizePixel = 0
+							track.Parent = Element.Instance
+							ThemeMethods.bindTheme(track, "BackgroundColor3", "Backgrounds.Groupbox")
+
+							local trackCorner = Instance.new("UICorner")
+							trackCorner.CornerRadius = UDim.new(0, 4)
+							trackCorner.Parent = track
+
+							-- Progress fill
+							local fill = Instance.new("Frame")
+							fill.Size = UDim2.new(ElementSettings.CurrentValue, 0, 1, 0)
+							fill.BackgroundColor3 = Color3.fromRGB(86, 156, 214)
+							fill.BorderSizePixel = 0
+							fill.Parent = track
+
+							local fillCorner = Instance.new("UICorner")
+							fillCorner.CornerRadius = UDim.new(0, 4)
+							fillCorner.Parent = fill
+
+							-- Gradient on fill
+							local gradient = Instance.new("UIGradient")
+							gradient.Color = ColorSequence.new({
+								ColorSequenceKeypoint.new(0, Color3.fromRGB(86, 156, 214)),
+								ColorSequenceKeypoint.new(1, Color3.fromRGB(120, 180, 240)),
+							})
+							gradient.Parent = fill
+
+							local function SetValue(val)
+								val = math.clamp(val, 0, 1)
+								ElementSettings.CurrentValue = val
+								TweenService:Create(fill, TweenInfo.new(0.3, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out), {
+									Size = UDim2.new(val, 0, 1, 0),
+								}):Play()
+								if ElementSettings.ShowLabel then
+									valueLabel.Text = math.floor(val * 100) .. "%"
+								end
+								if ElementSettings.Callback then
+									pcall(ElementSettings.Callback, val)
+								end
+							end
+
+							function Element:Set(NewSettings)
+								for k, v in pairs(NewSettings) do
+									if k == "CurrentValue" then
+										SetValue(v)
+									else
+										ElementSettings[k] = v
+									end
+								end
+							end
+
+							function Element:Destroy()
+								Element.Instance:Destroy()
+								Element = nil
+							end
+						end)
+
+						Starlight.Window.TabSections[Name].Tabs[TabIndex].Groupboxes[GroupIndex].Elements[Index] = Element
+						return Starlight.Window.TabSections[Name].Tabs[TabIndex].Groupboxes[GroupIndex].Elements[Index]
+					end
+
+					function Groupbox:CreateSegmentedControl(ElementSettings, Index)
+						--[[
+						ElementSettings = {
+							Name = string,
+							Options = { string, ... },
+							CurrentOption = string, **
+							Callback = function(string), **
+						}
+						]]
+
+						ElementSettings.CurrentOption = ElementSettings.CurrentOption or ElementSettings.Options[1] or ""
+						local Segment = { Values = ElementSettings, Class = "SegmentedControl" }
+
+						task.spawn(function()
+							Segment.Instance = Instance.new("Frame")
+							Segment.Instance.Name = "SEGMENTED_" .. Index
+							Segment.Instance.Size = UDim2.new(1, 0, 0, 64)
+							Segment.Instance.BackgroundTransparency = 1
+							Segment.Instance.Parent = Groupbox.ParentingItem
+
+							-- Header
+							local header = Instance.new("TextLabel")
+							header.Size = UDim2.new(1, -12, 0, 16)
+							header.Position = UDim2.new(0, 6, 0, 4)
+							header.BackgroundTransparency = 1
+							header.FontFace = Font.fromId(12187365364, Enum.FontWeight.Medium)
+							header.TextSize = 13
+							header.TextXAlignment = Enum.TextXAlignment.Left
+							header.Text = ElementSettings.Name
+							header.Parent = Segment.Instance
+							ThemeMethods.bindTheme(header, "TextColor3", "Foregrounds.Light")
+
+							-- Segmented buttons
+							local btnContainer = Instance.new("Frame")
+							btnContainer.Size = UDim2.new(1, -12, 0, 32)
+							btnContainer.Position = UDim2.new(0, 6, 0, 24)
+							btnContainer.BackgroundColor3 = Color3.fromRGB(35, 35, 42)
+							btnContainer.BorderSizePixel = 0
+							btnContainer.Parent = Segment.Instance
+							ThemeMethods.bindTheme(btnContainer, "BackgroundColor3", "Backgrounds.Medium")
+
+							local containerCorner = Instance.new("UICorner")
+							containerCorner.CornerRadius = UDim.new(0, 6)
+							containerCorner.Parent = btnContainer
+
+							local segmentButtons = {}
+							local activeHighlight = Instance.new("Frame")
+							activeHighlight.BackgroundColor3 = Color3.fromRGB(86, 156, 214)
+							activeHighlight.BorderSizePixel = 0
+							activeHighlight.ZIndex = 2
+							activeHighlight.Parent = btnContainer
+							local activeCorner = Instance.new("UICorner")
+							activeCorner.CornerRadius = UDim.new(0, 5)
+							activeCorner.Parent = activeHighlight
+
+							local numOptions = #ElementSettings.Options
+							local function updateActive()
+								for i, optName in ipairs(ElementSettings.Options) do
+									if optName == ElementSettings.CurrentOption then
+										activeHighlight.Size = UDim2.new(1 / numOptions, -2, 1, -2)
+										activeHighlight.Position = UDim2.new((i - 1) / numOptions, 1, 0, 1)
+									end
+								end
+							end
+							updateActive()
+
+							for i, optName in ipairs(ElementSettings.Options) do
+								local btn = Instance.new("TextButton")
+								btn.Size = UDim2.new(1 / numOptions, 0, 1, 0)
+								btn.Position = UDim2.new((i - 1) / numOptions, 0, 0, 0)
+								btn.BackgroundTransparency = 1
+								btn.FontFace = Font.fromId(12187365364, Enum.FontWeight.Medium)
+								btn.TextSize = 12
+								btn.TextColor3 = Color3.fromRGB(180, 180, 195)
+								btn.Text = optName
+								btn.ZIndex = 3
+								btn.Parent = btnContainer
+
+								btn.MouseButton1Click:Connect(function()
+									ElementSettings.CurrentOption = optName
+									updateActive()
+									if ElementSettings.Callback then
+										pcall(ElementSettings.Callback, optName)
+									end
+								end)
+
+								btn.MouseEnter:Connect(function()
+									if optName ~= ElementSettings.CurrentOption then
+										btn.TextColor3 = Color3.fromRGB(220, 220, 230)
+									end
+								end)
+								btn.MouseLeave:Connect(function()
+									if optName ~= ElementSettings.CurrentOption then
+										btn.TextColor3 = Color3.fromRGB(180, 180, 195)
+									end
+								end)
+
+								segmentButtons[i] = btn
+							end
+
+							function Segment:Set(NewSettings)
+								for k, v in pairs(NewSettings) do
+									if k == "CurrentOption" then
+										ElementSettings.CurrentOption = v
+										updateActive()
+									else
+										ElementSettings[k] = v
+									end
+								end
+							end
+
+							function Segment:Destroy()
+								Segment.Instance:Destroy()
+							end
+						end)
+
+						Starlight.Window.TabSections[Name].Tabs[TabIndex].Groupboxes[GroupIndex].Elements[Index] = Segment
+						return Starlight.Window.TabSections[Name].Tabs[TabIndex].Groupboxes[GroupIndex].Elements[Index]
+					end
+
+					function Groupbox:CreateBadge(ElementSettings, Index)
+						--[[
+						ElementSettings = {
+							Name = string,
+							Text = string,
+							Color = Color3, **
+							Icon = number, **
+							Removable = bool, **
+							Callback = function(), **
+						}
+						]]
+
+						ElementSettings.Color = ElementSettings.Color or Color3.fromRGB(86, 114, 160)
+
+						local Element = { Values = ElementSettings, Class = "Badge", IgnoreConfig = true }
+
+						task.spawn(function()
+							Element.Instance = Instance.new("Frame")
+							Element.Instance.Name = "BADGE_" .. Index
+							Element.Instance.Size = UDim2.new(1, 0, 0, 30)
+							Element.Instance.BackgroundTransparency = 1
+							Element.Instance.Parent = Groupbox.ParentingItem
+
+							-- Header label
+							if ElementSettings.Name and ElementSettings.Name ~= "" then
+								local header = Instance.new("TextLabel")
+								header.Size = UDim2.new(1, -12, 0, 16)
+								header.Position = UDim2.new(0, 6, 0, 2)
+								header.BackgroundTransparency = 1
+								header.FontFace = Font.fromId(12187365364, Enum.FontWeight.Medium)
+								header.TextSize = 13
+								header.TextXAlignment = Enum.TextXAlignment.Left
+								header.Text = ElementSettings.Name
+								header.Parent = Element.Instance
+								ThemeMethods.bindTheme(header, "TextColor3", "Foregrounds.Light")
+							end
+
+							-- Badge chip
+							local chip = Instance.new("Frame")
+							chip.Size = UDim2.new(0, 0, 0, 22)
+							chip.Position = UDim2.new(0, 6, 0, ElementSettings.Name and ElementSettings.Name ~= "" and 20 or 4)
+							chip.BackgroundColor3 = ElementSettings.Color
+							chip.BackgroundTransparency = 0.85
+							chip.BorderSizePixel = 0
+							chip.Parent = Element.Instance
+
+							local chipCorner = Instance.new("UICorner")
+							chipCorner.CornerRadius = UDim.new(0, 6)
+							chipCorner.Parent = chip
+
+							local chipStroke = Instance.new("UIStroke")
+							chipStroke.Color = ElementSettings.Color
+							chipStroke.Thickness = 1
+							chipStroke.Transparency = 0.5
+							chipStroke.Parent = chip
+
+							-- Text inside chip
+							local chipLabel = Instance.new("TextLabel")
+							chipLabel.Size = UDim2.new(0, math.huge, 1, 0)
+							chipLabel.Position = UDim2.new(0, 0, 0, 0)
+							chipLabel.BackgroundTransparency = 1
+							chipLabel.FontFace = Font.fromId(12187365364, Enum.FontWeight.Medium)
+							chipLabel.TextSize = 11
+							chipLabel.TextColor3 = ElementSettings.Color
+							chipLabel.Text = "  " .. ElementSettings.Text .. "  "
+							chipLabel.TextXAlignment = Enum.TextXAlignment.Center
+							chipLabel.Parent = chip
+
+							-- Size chip to fit text
+							local padding = Instance.new("UIPadding")
+							padding.PaddingLeft = UDim.new(0, 8)
+							padding.PaddingRight = UDim.new(0, 8)
+							padding.Parent = chip
+
+							chip.Size = UDim2.new(0, chipLabel.TextBounds.X + 20, 0, 22)
+
+							-- Remove button
+							if ElementSettings.Removable then
+								local removeBtn = Instance.new("TextButton")
+								removeBtn.Size = UDim2.new(0, 18, 0, 18)
+								removeBtn.Position = UDim2.new(1, -24, 0.5, -9)
+								removeBtn.BackgroundTransparency = 1
+								removeBtn.FontFace = Font.fromId(12187365364, Enum.FontWeight.Regular)
+								removeBtn.TextSize = 14
+								removeBtn.TextColor3 = Color3.fromRGB(140, 140, 155)
+								removeBtn.Text = "×"
+								removeBtn.Parent = Element.Instance
+
+								removeBtn.MouseButton1Click:Connect(function()
+									if ElementSettings.Callback then
+										pcall(ElementSettings.Callback)
+									end
+									Element.Instance:Destroy()
+								end)
+							end
+
+							function Element:Set(NewSettings)
+								for k, v in pairs(NewSettings) do
+									ElementSettings[k] = v
+								end
+								chipLabel.Text = "  " .. ElementSettings.Text .. "  "
+								chip.Size = UDim2.new(0, chipLabel.TextBounds.X + 20, 0, 22)
+								chip.BackgroundColor3 = ElementSettings.Color
+								chipLabel.TextColor3 = ElementSettings.Color
+							end
+
+							function Element:Destroy()
+								Element.Instance:Destroy()
+							end
+						end)
+
+						Starlight.Window.TabSections[Name].Tabs[TabIndex].Groupboxes[GroupIndex].Elements[Index] = Element
+						return Starlight.Window.TabSections[Name].Tabs[TabIndex].Groupboxes[GroupIndex].Elements[Index]
+					end
+
+					function Groupbox:CreateMedia(ElementSettings, Index)
+						--[[
+						ElementSettings = {
+							Name = string,
+							Image = number, ** (rbxassetid)
+							Size = UDim2, **
+						}
+						]]
+
+						local Element = { Values = ElementSettings, Class = "Media", IgnoreConfig = true }
+
+						task.spawn(function()
+							Element.Instance = Instance.new("Frame")
+							Element.Instance.Name = "MEDIA_" .. Index
+							Element.Instance.Size = ElementSettings.Size or UDim2.new(1, 0, 0, 160)
+							Element.Instance.BackgroundTransparency = 1
+							Element.Instance.Parent = Groupbox.ParentingItem
+
+							-- Header
+							if ElementSettings.Name and ElementSettings.Name ~= "" then
+								local header = Instance.new("TextLabel")
+								header.Size = UDim2.new(1, -12, 0, 16)
+								header.Position = UDim2.new(0, 6, 0, 4)
+								header.BackgroundTransparency = 1
+								header.FontFace = Font.fromId(12187365364, Enum.FontWeight.Medium)
+								header.TextSize = 13
+								header.TextXAlignment = Enum.TextXAlignment.Left
+								header.Text = ElementSettings.Name
+								header.Parent = Element.Instance
+								ThemeMethods.bindTheme(header, "TextColor3", "Foregrounds.Light")
+							end
+
+							-- Image display
+							if ElementSettings.Image then
+								local imageFrame = Instance.new("Frame")
+								imageFrame.Size = UDim2.new(1, -12, 1, -28)
+								imageFrame.Position = UDim2.new(0, 6, 0, ElementSettings.Name and ElementSettings.Name ~= "" and 24 or 8)
+								imageFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 42)
+								imageFrame.BorderSizePixel = 0
+								imageFrame.ClipsDescendants = true
+								imageFrame.Parent = Element.Instance
+								ThemeMethods.bindTheme(imageFrame, "BackgroundColor3", "Backgrounds.Medium")
+
+								local imgCorner = Instance.new("UICorner")
+								imgCorner.CornerRadius = UDim.new(0, 8)
+								imgCorner.Parent = imageFrame
+
+								local img = Instance.new("ImageLabel")
+								img.Size = UDim2.new(1, 0, 1, 0)
+								img.BackgroundTransparency = 1
+								img.Image = "rbxassetid://" .. ElementSettings.Image
+								img.ScaleType = Enum.ScaleType.Fit
+								img.Parent = imageFrame
+							end
+
+							function Element:Destroy()
+								Element.Instance:Destroy()
+							end
+						end)
+
+						Starlight.Window.TabSections[Name].Tabs[TabIndex].Groupboxes[GroupIndex].Elements[Index] = Element
+						return Starlight.Window.TabSections[Name].Tabs[TabIndex].Groupboxes[GroupIndex].Elements[Index]
+					end
+
+					--// ENDSUBSECTION
+
+					Groupbox.Instance.Parent = Tab.Instances.Page["Column_" .. GroupboxSettings.Column]
 				Starlight.Window.TabSections[Name].Tabs[TabIndex].Groupboxes[GroupIndex] = Groupbox
 				return Starlight.Window.TabSections[Name].Tabs[TabIndex].Groupboxes[GroupIndex]
 			end
@@ -10543,11 +12416,65 @@ function Starlight:SetTheme(newTheme)
 		themeToCopy = Starlight.Themes[themeToCopy]
 	end
 
-	Starlight.CurrentTheme = deepCopy(themeToCopy)
-	themeEvent:Fire()
-end
+		Starlight.CurrentTheme = deepCopy(themeToCopy)
+		themeEvent:Fire()
+	end
 
-function Starlight:LoadAutoloadTheme()
+	-- Set acrylic blur intensity (0 to 1, higher = more blur)
+	function Starlight:SetAcrylicIntensity(level: number)
+		if type(level) ~= "number" then return end
+		level = math.clamp(level, 0, 1)
+
+		-- Update local acrylic intensity state
+		if not _G.__starlightAcrylicIntensity then
+			_G.__starlightAcrylicIntensity = 1
+		end
+		_G.__starlightAcrylicIntensity = level
+
+		-- The Acrylic module stores NearIntensity -- we can set it directly
+		-- via the acrylic blur object
+		pcall(function()
+			local blur = Lighting:FindFirstChild("starlightBlur")
+			if blur then
+				blur.NearIntensity = level
+			end
+			-- Also update Acrylic module if available
+			if Acrylic.SetIntensity then
+				Acrylic.SetIntensity(level)
+			end
+		end)
+	end
+
+	-- Register acoustic intensity command
+	Starlight.CommandPalette:RegisterCommand({
+		Name = "Set Acrylic Intensity 50%",
+		Description = "Set blur effect to medium intensity",
+		Category = "Display",
+		Callback = function()
+			Starlight:SetAcrylicIntensity(0.5)
+			Starlight:Toast({ Title = "Acrylic: 50%", Intent = "info", Duration = 2 })
+		end,
+	})
+	Starlight.CommandPalette:RegisterCommand({
+		Name = "Set Acrylic Intensity 100%",
+		Description = "Set blur effect to full intensity",
+		Category = "Display",
+		Callback = function()
+			Starlight:SetAcrylicIntensity(1)
+			Starlight:Toast({ Title = "Acrylic: 100%", Intent = "info", Duration = 2 })
+		end,
+	})
+	Starlight.CommandPalette:RegisterCommand({
+		Name = "Set Acrylic Intensity 25%",
+		Description = "Set blur effect to low intensity",
+		Category = "Display",
+		Callback = function()
+			Starlight:SetAcrylicIntensity(0.25)
+			Starlight:Toast({ Title = "Acrylic: 25%", Intent = "info", Duration = 2 })
+		end,
+	})
+
+	function Starlight:LoadAutoloadTheme()
 	if isStudio or not isfile then
 		return "Config system unavailable."
 	end
