@@ -10279,8 +10279,8 @@ function Starlight:CreateWindow(WindowSettings)
 						]]
 
 						ElementSettings.CurrentValue = ElementSettings.CurrentValue or 0
-						ElementSettings.Determinate = if ElementSettings.Determinate == nil then true else ElementSettings.Determinate
-						ElementSettings.ShowLabel = if ElementSettings.ShowLabel == nil then true else ElementSettings.ShowLabel
+						if ElementSettings.Determinate == nil then ElementSettings.Determinate = true end
+						if ElementSettings.ShowLabel == nil then ElementSettings.ShowLabel = true end
 
 						local Element = {
 							Values = ElementSettings,
